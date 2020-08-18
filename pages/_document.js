@@ -14,8 +14,8 @@ class _Document extends Document {
         return (
             <Html>
                 <Head>
-                    <link rel="icon" href="https://picsum.photos/200/300" />
-                    <meta property="og:image" content="https://picsum.photos/200/300" />
+                    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+                    <meta property="og:image" content="/logo.png" />
                     <meta property="og:url" content="image/png" />
                     <meta property="og:description" content={this.getDescription()} />
                     <meta property="og:type" content="website" />

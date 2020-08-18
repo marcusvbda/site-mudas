@@ -21,16 +21,28 @@ html {
 	}
 }
 
+
+button {
+	&:focus {
+		outline: unset;
+	}
+}
+
+.top-contact {
+	background-color: #efefef;
+	.muted-icon {
+		color : #848484;
+		&:hover {
+			color : #656565;
+			transition:.4s;
+		}
+	}
+}
+
 footer {
 	&.footer {
 		border-top: 1px solid #f6f6f6;
 		padding-top: 15px;
 		padding-bottom: 15px;
-	}
-}
-
-button {
-	&:focus {
-		outline: unset;
 	}
 }
