@@ -3,8 +3,9 @@ import Link from 'next/Link'
 import { Navbar, Nav, Image, Container } from 'react-bootstrap'
 import Head from 'next/head'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faAddressCard, faLeaf, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faHome, faAddressCard, faLeaf, faEnvelope, faPhone, faMobile, faBraille } from '@fortawesome/free-solid-svg-icons'
 import { faFacebook, faWhatsapp, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons'
+import FloatingWpp from './floatingWpp'
 
 const LandingTemplate = ({ title, children }) => {
 
@@ -13,7 +14,13 @@ const LandingTemplate = ({ title, children }) => {
         const start_date = '2019'
         const current_date = date.getFullYear()
         if (start_date == current_date) return current_date
-        return `${start_date} - ${date.getFullYear()}`
+
+        return (
+            <div className="d-flex flex-row align-items-center">
+                <FontAwesomeIcon icon={faBraille} style={{ fontSize: 20 }} className="mr-2" />
+                {start_date} - {date.getFullYear()}
+            </div>
+        )
     }
 
     const GetTitle = () => {
@@ -31,20 +38,22 @@ const LandingTemplate = ({ title, children }) => {
             <Navbar expand="lg" className="top-contact d-none d-md-block">
                 <Container>
                     <small className="text-muted">
-                        <FontAwesomeIcon icon={faAddressCard} className="mr-1" />
-                        <span>vendas@mudascarvalho.com.br | (99) 99999-9999</span>
+                        <FontAwesomeIcon icon={faEnvelope} className="mr-1" />
+                        <span>vendas@mudascarvalho.com.br
+                        <FontAwesomeIcon icon={faPhone} className="mx-1" />(14) 3486-1376
+                        <FontAwesomeIcon icon={faMobile} className="mx-1" />(14) 99721-1736</span>
                     </small>
                     <div className="ml-auto">
-                        <a href="#" className="muted-icon">
+                        <a href="http://wa.me/+5514997211736" className="muted-icon" target="_blank">
                             <FontAwesomeIcon icon={faWhatsapp} style={{ fontSize: 25 }} className="mx-1" />
                         </a>
-                        <a href="#" className="muted-icon">
+                        <a href="https://www.instagram.com/mudascarvalho" className="muted-icon" target="_blank">
                             <FontAwesomeIcon icon={faFacebook} style={{ fontSize: 25 }} className="mx-1" />
                         </a>
-                        <a href="#" className="muted-icon">
+                        <a href="https://www.instagram.com/mudascarvalho" className="muted-icon" target="_blank">
                             <FontAwesomeIcon icon={faInstagram} style={{ fontSize: 25 }} className="mx-1" />
                         </a>
-                        <a href="#" className="muted-icon">
+                        <a href="https://www.youtube.com/channel/UCw3Si5-MCBwI-LTyPmrwsYA" className="muted-icon" target="_blank">
                             <FontAwesomeIcon icon={faYoutube} style={{ fontSize: 25 }} className="mx-1" />
                         </a>
                     </div>
@@ -53,7 +62,7 @@ const LandingTemplate = ({ title, children }) => {
             <Navbar expand="lg" bg="ligth">
                 <Container>
                     <Link href="">
-                        <Navbar.Brand className="cursor-pointer">
+                        <Navbar.Brand className="cursor-pointer pt-0">
                             <Image src="/logo.png"
                                 height="55"
                                 alt="Pixer" />
@@ -82,9 +91,11 @@ const LandingTemplate = ({ title, children }) => {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
+            <div className="gradient-bar" />
             <main>
                 {children}
             </main>
+            <FloatingWpp />
             <footer className="footer container text-muted">
                 <div className="d-flex flex-row justify-content-between align-items-center">
                     <Image src="/logo.png"

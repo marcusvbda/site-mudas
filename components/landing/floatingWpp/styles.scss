@@ -1,0 +1,52 @@
+.floating-area {
+    position: fixed;
+    bottom: 85px;
+    right: 20px;
+    z-index: 999;
+    .floating-wpp {
+        color: #3fc250;
+        font-weight: 800;
+        transition: .4s;
+        transform : scale(.90);
+        opacity: .7;
+        &:hover {
+            transform : scale(1);
+            opacity: 1;
+            text-decoration: none;
+            color: #238931;
+        }
+        .ball {
+            position: absolute;
+            left: -50px;
+            top: -25px;
+            border-radius: 100%;
+            img {
+                height: 75px;
+            }
+        }
+        .title {
+            background-color: white;
+            padding: 10px 20px 10px 30px;
+            border-radius: 50px;
+        }
+        @media(max-width:768px) {
+            .title {
+                display: none;
+                background-color: white;
+                padding: 10px 20px 10px 30px;
+                border-radius: 50px;
+            }
+            .ball {
+                img {
+                    height: 90px;
+                }
+            }
+        }
+    }
+}
+@media(max-width:768px) {
+    .floating-area {
+        bottom: 130px;
+        right: 50px;
+    }
+}

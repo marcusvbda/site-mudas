@@ -31,7 +31,7 @@ button {
 .top-contact {
 	background-color: #efefef;
 	.muted-icon {
-		color : #848484;
+		color : rgba(0, 0, 0, 0.5);
 		&:hover {
 			color : #656565;
 			transition:.4s;
@@ -45,4 +45,11 @@ footer {
 		padding-top: 15px;
 		padding-bottom: 15px;
 	}
+}
+
+.gradient-bar {
+	height: 4px;
+    width: 100%;
+    background: rgb(3,54,23);
+    background: linear-gradient(90deg, rgba(3,54,23,1) 13%, rgba(124,131,23,1) 31%, rgba(255,127,0,1) 48%, rgba(120,133,24,1) 66%, rgba(111,139,25,1) 83%, rgba(25,139,113,1) 100%);
 }
