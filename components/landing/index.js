@@ -35,7 +35,7 @@ const LandingTemplate = ({ title, children }) => {
                 <title>{GetTitle()}</title>
                 <meta property="og:title" content={GetTitle()} key="title" />
             </Head>
-            <Navbar expand="lg" className="top-contact d-none d-md-block">
+            <Navbar className="top-contact d-none d-md-block">
                 <Container>
                     <small className="text-muted flex-row d-flex">
                         <span className="d-flex align-items-center" >
@@ -67,7 +67,7 @@ const LandingTemplate = ({ title, children }) => {
                     </div>
                 </Container>
             </Navbar>
-            <Navbar expand="lg" bg="ligth">
+            <Navbar expand="md" bg="ligth">
                 <Container>
                     <Link href="">
                         <Navbar.Brand className="cursor-pointer pt-0">
