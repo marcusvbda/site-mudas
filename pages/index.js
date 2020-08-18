@@ -1,5 +1,4 @@
 import React from 'react'
-// import Link from 'next/Link'
 import LandingTemplate from '@/components/landing'
 
 import { Button, Container, Row, Col, Carousel } from 'react-bootstrap'
