@@ -48,11 +48,11 @@ const LandingTemplate = ({ title, children }) => {
                         </span>
                         <span className="ml-4 d-flex align-items-center" >
                             <FontAwesomeIcon icon={faMobile} className="mr-1" />
-                            <a class="text-muted" href="tel:+5514997211736">(14) 99721-1736</a>
+                            <a class="text-muted" href="tel:+5514997210771">(14) 99721-0771</a>
                         </span>
                     </small>
                     <div className="ml-auto">
-                        <a href="http://wa.me/+5514997211736" className="muted-icon" target="_blank">
+                        <a href="http://wa.me/+5514997210771" className="muted-icon" target="_blank">
                             <FontAwesomeIcon icon={faWhatsapp} style={{ fontSize: 25 }} className="mx-1" />
                         </a>
                         <a href="https://www.instagram.com/mudascarvalho" className="muted-icon" target="_blank">
@@ -120,7 +120,7 @@ const LandingTemplate = ({ title, children }) => {
                             <FontAwesomeIcon icon={faPhone} className="mr-1" />
                             <a class="text-muted" href="tel:+551434861376">(14) 3486-1376</a>
                             <FontAwesomeIcon icon={faMobile} className="ml-2 mr-1" />
-                            <a class="text-muted" href="tel:+5514997211736">(14) 99721-1736</a>
+                            <a class="text-muted" href="tel:+5514997210771">(14) 99721-0771</a>
                         </span>
                     </small>
                     <div className="d-none d-md-block">
