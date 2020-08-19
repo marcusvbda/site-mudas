@@ -14,7 +14,7 @@ class _Document extends Document {
         return (
             <Html>
                 <Head>
-                    <link rel="icon" href="/favicon.png" />
+                    <link rel="icon" href="/favicon.ico" />
                     <meta property="og:image" content="/logo.png" />
                     <meta property="og:url" content="image/png" />
                     <meta property="og:description" content={this.getDescription()} />
