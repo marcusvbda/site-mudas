@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { Navbar, Nav, Image, Container } from 'react-bootstrap'
 import Head from 'next/head'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faAddressCard, faLeaf, faEnvelope, faCompass, faPhone, faMobile, faBraille } from '@fortawesome/free-solid-svg-icons'
+import { faHome, faAddressCard, faLeaf, faEnvelope, faCompass, faPhone, faMobile, faBraille, faBriefcase } from '@fortawesome/free-solid-svg-icons'
 import { faFacebook, faWhatsapp, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons'
 import ReactIf from '@/components/logic/react-if'
 
@@ -107,8 +107,12 @@ const LandingTemplate = ({ title, children, isMobile }) => {
                                 <FontAwesomeIcon icon={faAddressCard} className="mr-1" />
                                 Sobre
                             </Nav.Link>
-                            <Nav.Link href="/servicos">
+                            <Nav.Link href="/produtos">
                                 <FontAwesomeIcon icon={faLeaf} className="mr-1" />
+                                Produtos
+                            </Nav.Link>
+                            <Nav.Link href="/servicos">
+                                <FontAwesomeIcon icon={faBriefcase} className="mr-1" />
                                 Serviços
                             </Nav.Link>
                             <Nav.Link href="/contato">
@@ -138,11 +142,9 @@ const LandingTemplate = ({ title, children, isMobile }) => {
             <footer className="footer container text-muted mt-4">
                 <div className="d-flex flex-row justify-content-md-between justify-content-center align-items-center">
                     <ReactIf condition={!isMobile}>
-                        <div>
-                            <Image src="/logo.png"
-                                height="50"
-                                alt="Carvalho Mudas" />
-                        </div>
+                        <Image src="/logo.png"
+                            height="50"
+                            alt="Carvalho Mudas" />
                     </ReactIf>
                     <small className="text-muted flex-column d-flex">
                         <span className="d-flex align-items-center justify-content-center" >
