@@ -30,12 +30,13 @@ button {
 
 .top-contact {
 	background-color: #efefef;
-	.muted-icon {
-		color : rgba(0, 0, 0, 0.5);
-		&:hover {
-			color : #656565;
-			transition:.4s;
-		}
+}
+
+.muted-icon {
+	color : rgba(0, 0, 0, 0.5);
+	&:hover {
+		color : #656565;
+		transition:.4s;
 	}
 }
 
@@ -52,4 +53,81 @@ footer {
     width: 100%;
     background: rgb(3,54,23);
     background: linear-gradient(90deg, rgba(3,54,23,1) 13%, rgba(124,131,23,1) 31%, rgba(255,127,0,1) 48%, rgba(120,133,24,1) 66%, rgba(111,139,25,1) 83%, rgba(25,139,113,1) 100%);
+}
+
+.floating-area {
+    position: fixed;
+    bottom: 140px;
+    right: 20px;
+    z-index: 999;
+    .floating-wpp {
+        color: #3fc250;
+        font-weight: 800;
+        transition: .4s;
+        transform : scale(.90);
+        opacity: .7;
+        &:hover {
+            transform : scale(1);
+            opacity: 1;
+            text-decoration: none;
+            color: #238931;
+        }
+        .ball {
+            position: absolute;
+            left: -50px;
+            top: -25px;
+            border-radius: 100%;
+            img {
+                height: 75px;
+            }
+        }
+        .title {
+            background-color: white;
+            padding: 10px 20px 10px 30px;
+            border-radius: 50px;
+        }
+        @media(max-width:768px) {
+            .title {
+                display: none;
+                background-color: white;
+                padding: 10px 20px 10px 30px;
+                border-radius: 50px;
+            }
+            .ball {
+                img {
+                    height: 60px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:768px) {
+    .floating-area {
+        .floating-wpp {
+            opacity: .5;
+        }
+    }
+}
+
+.carousel-image {
+    color : white;
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: start;
+    &.mobile {
+        height: 350px;
+    }
+    strong {
+        font-size: 60px;
+    }
+    @media(max-width:768px) {
+        strong {
+            font-size: 35px;
+        }
+    }
 }
