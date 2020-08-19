@@ -5,8 +5,9 @@ import Head from 'next/head'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome, faAddressCard, faLeaf, faEnvelope, faCompass, faPhone, faMobile, faBraille } from '@fortawesome/free-solid-svg-icons'
 import { faFacebook, faWhatsapp, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons'
+import ReactIf from '@/components/logic/react-if'
 
-const LandingTemplate = ({ title, children }) => {
+const LandingTemplate = ({ title, children, isMobile }) => {
 
     const GetTitle = () => {
         const defaultTitle = "Mudas Carvalho"
@@ -58,7 +59,6 @@ const LandingTemplate = ({ title, children }) => {
         )
     }
 
-
     return (
         <>
             <h1 className="d-none">Carvalho Mudas</h1>
@@ -67,29 +67,31 @@ const LandingTemplate = ({ title, children }) => {
                 <title>{GetTitle()}</title>
                 <meta property="og:title" content={GetTitle()} key="title" />
             </Head>
-            <Navbar expand="md" bg="ligth" className="top-contact d-none d-md-block">
-                <Container>
-                    <small className="text-muted flex-row d-flex">
-                        <span className="d-flex align-items-center" >
-                            <FontAwesomeIcon icon={faEnvelope} className="mr-1" />
-                            <span>vendas@mudascarvalho.com.br</span>
-                        </span>
-                        <div className="ml-3">
-                            <PhonesRow />
+            <ReactIf condition={!isMobile}>
+                <Navbar expand="md" bg="ligth" className="top-contact d-none d-md-block">
+                    <Container>
+                        <small className="text-muted flex-row d-flex">
+                            <span className="d-flex align-items-center" >
+                                <FontAwesomeIcon icon={faEnvelope} className="mr-1" />
+                                <span>vendas@mudascarvalho.com.br</span>
+                            </span>
+                            <div className="ml-3">
+                                <PhonesRow />
+                            </div>
+                        </small>
+                        <div className="ml-auto">
+                            <SocialIcons className="ml-3" />
                         </div>
-                    </small>
-                    <div className="ml-auto">
-                        <SocialIcons className="ml-3" />
-                    </div>
-                </Container>
-            </Navbar>
+                    </Container>
+                </Navbar>
+            </ReactIf>
             <Navbar expand="md" bg="ligth">
                 <Container>
                     <Link href="/">
                         <a>
                             <Navbar.Brand className="cursor-pointer pt-0">
                                 <Image src="/logo.png"
-                                    height="75"
+                                    height={isMobile ? 50 : 75}
                                     alt="Carvalho Mudas" />
                             </Navbar.Brand>
                         </a>
@@ -135,11 +137,13 @@ const LandingTemplate = ({ title, children }) => {
             </div>
             <footer className="footer container text-muted mt-4">
                 <div className="d-flex flex-row justify-content-md-between justify-content-center align-items-center">
-                    <div className="d-none d-md-block">
-                        <Image src="/logo.png" className="d-none d-md-block"
-                            height="50"
-                            alt="Carvalho Mudas" />
-                    </div>
+                    <ReactIf condition={!isMobile}>
+                        <div>
+                            <Image src="/logo.png"
+                                height="50"
+                                alt="Carvalho Mudas" />
+                        </div>
+                    </ReactIf>
                     <small className="text-muted flex-column d-flex">
                         <span className="d-flex align-items-center justify-content-center" >
                             <FontAwesomeIcon icon={faEnvelope} className="mr-1" />
@@ -148,9 +152,9 @@ const LandingTemplate = ({ title, children }) => {
                         <PhonesRow />
                         <SocialIcons />
                     </small>
-                    <div className="d-none d-md-block">
+                    <ReactIf condition={!isMobile}>
                         <GetYear />
-                    </div>
+                    </ReactIf>
                 </div>
             </footer>
         </>
