@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { GlobalContext } from '@/context/globalContext'
 import LandingTemplate from '@/components/landing'
 import { Container, Row, Col } from 'react-bootstrap'
 import Carousel from "@/components/home/carousel"
 
 const Home = () => {
+    const { app } = useContext(GlobalContext)
 
     const RenderItems = () => {
         let items = []
@@ -22,7 +24,7 @@ const Home = () => {
     return (
         <LandingTemplate title="Home">
             <div className="mb-4">
-                <Carousel />
+                <Carousel isMobile={app.isMobile} />
             </div>
             <Container>
                 <Row id="saber-mais">

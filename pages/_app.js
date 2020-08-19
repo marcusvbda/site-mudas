@@ -2,6 +2,7 @@ import Router from 'next/router'
 import NProgress from 'nprogress'
 import GlobalContextProvider from '@/context/globalContext'
 import "@/scss/app.scss"
+import { getIsMobile } from '@/utils/helpers'
 
 Router.events.on('routeChangeStart', () => NProgress.start())
 Router.events.on('routeChangeComplete', () => NProgress.done())
@@ -23,7 +24,7 @@ App.getInitialProps = async ({ Component, ctx }) => {
     }
 
     const getAppConfigProps = ctx => {
-        return {}
+        return { isMobile: getIsMobile(ctx) }
     }
 
     return { pageProps: await getChildProps(Component, ctx), app: getAppConfigProps(ctx) }

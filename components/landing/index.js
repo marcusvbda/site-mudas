@@ -3,11 +3,8 @@ import Link from 'next/link'
 import { Navbar, Nav, Image, Container } from 'react-bootstrap'
 import Head from 'next/head'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faAddressCard, faLeaf, faEnvelope, faCompass } from '@fortawesome/free-solid-svg-icons'
-import FloatingWpp from './partials/floating-wpp'
-import PhonesRow from './partials/phonesRow'
-import Footer from './partials/footer'
-import SocialIcons from './partials/socialIcons'
+import { faHome, faAddressCard, faLeaf, faEnvelope, faCompass, faPhone, faMobile, faBraille } from '@fortawesome/free-solid-svg-icons'
+import { faFacebook, faWhatsapp, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons'
 
 const LandingTemplate = ({ title, children }) => {
 
@@ -16,6 +13,51 @@ const LandingTemplate = ({ title, children }) => {
         if (!title) return defaultTitle
         return `${title} | ${defaultTitle}`
     }
+
+    const GetYear = () => {
+        const date = new Date()
+        const start_date = '2019'
+        const current_date = date.getFullYear()
+        if (start_date == current_date) return current_date
+
+        return (
+            <div className="d-flex flex-row align-items-center">
+                <FontAwesomeIcon icon={faBraille} style={{ fontSize: 20 }} className="mr-2" />
+                {start_date} - {date.getFullYear()}
+            </div>
+        )
+    }
+
+    const PhonesRow = () => {
+        return (
+            <span className="d-flex align-items-center justify-content-center my-1" >
+                <FontAwesomeIcon icon={faPhone} className="mr-1" />
+                <a className="text-muted" href="tel:+551434861376">(14) 3486-1376</a>
+                <FontAwesomeIcon icon={faMobile} className="ml-3 mr-1" />
+                <a className="text-muted" href="tel:+5514997210771">(14) 99721-0771</a>
+            </span>
+        )
+    }
+
+    const SocialIcons = () => {
+        return (
+            <div className="d-flex flex-row justify-content-center">
+                <a href="http://wa.me/+5514997210771" className="muted-icon" target="_blank">
+                    <FontAwesomeIcon icon={faWhatsapp} style={{ fontSize: 25 }} className="mx-1" />
+                </a>
+                <a href="https://www.instagram.com/mudascarvalho" className="muted-icon" target="_blank">
+                    <FontAwesomeIcon icon={faFacebook} style={{ fontSize: 25 }} className="mx-1" />
+                </a>
+                <a href="https://www.instagram.com/mudascarvalho" className="muted-icon" target="_blank">
+                    <FontAwesomeIcon icon={faInstagram} style={{ fontSize: 25 }} className="mx-1" />
+                </a>
+                <a href="https://www.youtube.com/channel/UCw3Si5-MCBwI-LTyPmrwsYA" className="muted-icon" target="_blank">
+                    <FontAwesomeIcon icon={faYoutube} style={{ fontSize: 25 }} className="mx-1" />
+                </a>
+            </div>
+        )
+    }
+
 
     return (
         <>
@@ -83,8 +125,34 @@ const LandingTemplate = ({ title, children }) => {
             <main>
                 {children}
             </main>
-            <FloatingWpp />
-            <Footer />
+            <div className="floating-area">
+                <a href="http://wa.me/+5514997210771" target="_blank" className="floating-wpp shadow">
+                    <div className="ball">
+                        <Image src="/wpp.png" alt="Whatsapp" />
+                    </div>
+                    <span className="title">FALE CONOSCO !</span>
+                </a>
+            </div>
+            <footer className="footer container text-muted mt-4">
+                <div className="d-flex flex-row justify-content-md-between justify-content-center align-items-center">
+                    <div className="d-none d-md-block">
+                        <Image src="/logo.png" className="d-none d-md-block"
+                            height="50"
+                            alt="Carvalho Mudas" />
+                    </div>
+                    <small className="text-muted flex-column d-flex">
+                        <span className="d-flex align-items-center justify-content-center" >
+                            <FontAwesomeIcon icon={faEnvelope} className="mr-1" />
+                            <span>vendas@mudascarvalho.com.br</span>
+                        </span>
+                        <PhonesRow />
+                        <SocialIcons />
+                    </small>
+                    <div className="d-none d-md-block">
+                        <GetYear />
+                    </div>
+                </div>
+            </footer>
         </>
     )
 }
