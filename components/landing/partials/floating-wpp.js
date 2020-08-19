@@ -4,7 +4,7 @@ import { Image } from 'react-bootstrap'
 const FloatingWpp = () => {
     return (
         <div className="floating-area">
-            <a href="http://wa.me/+5514997211736" target="_blank" className="floating-wpp shadow">
+            <a href="http://wa.me/+5514997210771" target="_blank" className="floating-wpp shadow">
                 <div className="ball">
                     <Image src="/wpp.png" alt="Whatsapp" />
                 </div>

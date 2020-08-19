@@ -21,7 +21,9 @@ const Home = () => {
 
     return (
         <LandingTemplate title="Home">
-            <Carousel className="mb-4" />
+            <div className="mb-4">
+                <Carousel />
+            </div>
             <Container>
                 <Row id="saber-mais">
                     <RenderItems />

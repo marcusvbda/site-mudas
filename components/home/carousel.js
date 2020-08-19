@@ -2,11 +2,12 @@ import React from 'react'
 import Link from 'next/link'
 import { Button, Container, Carousel } from 'react-bootstrap'
 
-const CarouselHome = ({ className }) => {
+const CarouselHome = () => {
+
     const timeout = 4000
 
     return (
-        <div className={`${className}`}>
+        <div>
             <Carousel interval={timeout} className="d-none d-md-block">
                 <Carousel.Item>
                     <div className="carousel-image" style={{

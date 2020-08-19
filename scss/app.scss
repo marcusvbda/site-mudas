@@ -60,18 +60,13 @@ footer {
     bottom: 140px;
     right: 20px;
     z-index: 999;
+    transition: .4s;
+    transform : scale(.95);
+    opacity: .7;
     .floating-wpp {
         color: #3fc250;
         font-weight: 800;
-        transition: .4s;
-        transform : scale(.90);
-        opacity: .7;
-        &:hover {
-            transform : scale(1);
-            opacity: 1;
-            text-decoration: none;
-            color: #238931;
-        }
+        text-decoration: unset;
         .ball {
             position: absolute;
             left: -50px;
@@ -100,12 +95,19 @@ footer {
             }
         }
     }
+
+    &:hover {
+        transform : scale(1);
+        opacity: 1;
+        text-decoration: none;
+        color: #238931;
+    }
 }
 
 @media(max-width:768px) {
     .floating-area {
         .floating-wpp {
-            opacity: .5;
+            opacity: .7;
         }
     }
 }
