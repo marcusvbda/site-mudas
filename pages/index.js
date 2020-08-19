@@ -1,8 +1,7 @@
 import React from 'react'
 import LandingTemplate from '@/components/landing'
-import Link from 'next/link'
 import { Container, Row, Col } from 'react-bootstrap'
-import CarouselHome from "@/components/carousel-home"
+import Carousel from "@/components/home/carousel"
 
 const Home = () => {
 
@@ -22,7 +21,7 @@ const Home = () => {
 
     return (
         <LandingTemplate title="Home">
-            <CarouselHome className="mb-4" />
+            <Carousel className="mb-4" />
             <Container>
                 <Row id="saber-mais">
                     <RenderItems />
