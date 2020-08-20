@@ -1,12 +1,17 @@
 import React, { useContext } from 'react'
-import dynamic from "next/dynamic"
 import { GlobalContext } from '@/src/context/globalContext'
 import LandingTemplate from '@/src/components/landing'
 import { Container, Row, Col } from 'react-bootstrap'
-const YouTube = dynamic(() => import('react-youtube'))
-const Carousel = dynamic(() => import('@/src/components/home/carousel'))
-const TestimonalCard = dynamic(() => import('@/src/components/home/testimonial-card'))
-const MotionCard = dynamic(() => import('@/src/components/home/motion-card'))
+import YouTube from 'react-youtube'
+import Carousel from '@/src/components/home/carousel'
+import TestimonalCard from '@/src/components/home/testimonial-card'
+import MotionCard from '@/src/components/home/motion-card'
+
+// import dynamic from "next/dynamic"
+// const YouTube = dynamic(() => import('react-youtube'))
+// const Carousel = dynamic(() => import('@/src/components/home/carousel'))
+// const TestimonalCard = dynamic(() => import('@/src/components/home/testimonial-card'))
+// const MotionCard = dynamic(() => import('@/src/components/home/motion-card'))
 
 const Home = () => {
     const { app } = useContext(GlobalContext)
