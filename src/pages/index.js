@@ -50,13 +50,6 @@ const Home = () => {
                             </div>
                         </Col>
                     </Row>
-
-                    <Row className="d-flex justify-content-center mt-5 mb-4">
-                        <Col xs={8} xs={8} md={3}>
-                            <Image src="/home/leaf-bg.png" className="w-100 leaf-bg"
-                                alt="Carvalho Mudas" />
-                        </Col>
-                    </Row>
                 </Container>
             </section>
             <section className="bg-green py-5">
