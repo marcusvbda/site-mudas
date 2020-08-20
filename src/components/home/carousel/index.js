@@ -1,5 +1,6 @@
 import React from 'react'
 import dynamic from 'next/dynamic'
+import "./styles.scss"
 
 const CarouselHome = ({ isMobile }) => {
     const CarouselVersion = () => {

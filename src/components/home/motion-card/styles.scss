@@ -1,0 +1,48 @@
+.square-250 {
+    cursor: pointer;
+    height: 300px;
+    width: 100%;
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding : 0;
+    margin-bottom: 20px;
+    .container-tree {
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        color: white;
+        &.green {
+            background-color: #1b9f4485;
+        }
+        &.purple {
+            background-color:#c244d85c;
+        }
+        &.black {
+            background-color :#00000091;
+        }
+        width: 100%;
+        .title {
+            font-size : 30px;
+            font-weight: bolder;
+            text-align: center;
+        }
+        .description {
+            width: 75%;
+            text-align: center;
+        }
+    }
+}
+
+@media(max-width:768px) {
+    .square-250 {
+        border-radius: unset;
+        .container-tree {
+            visibility: visible;
+            border-radius: unset;
+        }
+    }
+}

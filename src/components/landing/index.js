@@ -100,27 +100,27 @@ const LandingTemplate = ({ title, children, isMobile }) => {
                     <Navbar.Collapse>
                         <Nav className="ml-auto">
                             <Nav.Link href="/">
-                                <FontAwesomeIcon icon={faHome} className="mr-1" />
+                                <FontAwesomeIcon icon={faHome} className="mr-2" />
                                 Home
                             </Nav.Link>
                             <Nav.Link href="/#saber-mais">
-                                <FontAwesomeIcon icon={faAddressCard} className="mr-1" />
+                                <FontAwesomeIcon icon={faAddressCard} className="mr-2" />
                                 Sobre
                             </Nav.Link>
                             <Nav.Link href="/produtos">
-                                <FontAwesomeIcon icon={faLeaf} className="mr-1" />
+                                <FontAwesomeIcon icon={faLeaf} className="mr-2" />
                                 Produtos
                             </Nav.Link>
                             <Nav.Link href="/servicos">
-                                <FontAwesomeIcon icon={faBriefcase} className="mr-1" />
+                                <FontAwesomeIcon icon={faBriefcase} className="mr-2" />
                                 Serviços
                             </Nav.Link>
                             <Nav.Link href="/contato">
-                                <FontAwesomeIcon icon={faEnvelope} className="mr-1" />
+                                <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
                                 Contato
                             </Nav.Link>
                             <Nav.Link href="/localizacao">
-                                <FontAwesomeIcon icon={faCompass} className="mr-1" />
+                                <FontAwesomeIcon icon={faCompass} className="mr-2" />
                                 Localização
                             </Nav.Link>
                         </Nav>

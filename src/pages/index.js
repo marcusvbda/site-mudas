@@ -63,7 +63,7 @@ const Home = () => {
                         />
                         <MotionCard
                             image="/home/jabuticabeira.jpg"
-                            type="purple"
+                            type="black"
                             title="Adoce a Vida 🍍"
                             description="De mais sabor ao mundo e adoce o dia das pessoas colhendo frutas !"
                         />

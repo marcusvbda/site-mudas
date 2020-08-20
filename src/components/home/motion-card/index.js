@@ -1,5 +1,6 @@
 import React from 'react'
 import { Col } from 'react-bootstrap'
+import "./styles.scss"
 
 const MotionCard = ({ description, title, image, type }) => {
     return (

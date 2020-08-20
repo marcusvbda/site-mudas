@@ -2,6 +2,7 @@ import React from 'react'
 import { Container, Row, Col, Image, Card } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faQuoteLeft, faQuoteRight, faStar } from '@fortawesome/free-solid-svg-icons'
+import "./styles.scss"
 
 const TestimonalCard = ({ children, name, image, stars }) => {
     const Rate = () => {
@@ -13,10 +14,10 @@ const TestimonalCard = ({ children, name, image, stars }) => {
     return (
         <Col md={4} sm={12} className="d-flex align-items-strench">
             <Card className="testimonial-card shadow w-100">
-                <Card.Body className="d-flex flex-column">
-                    <Row className="d-flex justify-content-center">
-                        <Col xs={8} sm={8} md={6} style={{ height: 70 }}>
-                            <Image src={image} roundedCircle className="w-100" />
+                <Card.Body className="d-flex flex-column pt-1">
+                    <Row className="d-flex justify-content-center mb-4">
+                        <Col xs={8} sm={8} md={6} className="imagecol">
+                            <Image src={image} roundedCircle className="w-100 shadow" />
                         </Col>
                     </Row>
                     <Row>
@@ -25,10 +26,14 @@ const TestimonalCard = ({ children, name, image, stars }) => {
                         </Col>
                     </Row>
                     <Row className="mb-3">
-                        <Col>
-                            <FontAwesomeIcon icon={faQuoteLeft} className="text-tree mr-2" style={{ fontSize: 20 }} />
+                        <Col className="text-center d-flex flex-column">
+                            <div className="d-flex justify-content-start mb-3">
+                                <FontAwesomeIcon icon={faQuoteLeft} className="text-tree" style={{ fontSize: 20 }} />
+                            </div>
                             {children}
-                            <FontAwesomeIcon icon={faQuoteRight} className="text-tree ml-2" style={{ fontSize: 20 }} />
+                            <div className="d-flex justify-content-end">
+                                <FontAwesomeIcon icon={faQuoteRight} className="text-tree mt-2" style={{ fontSize: 20 }} />
+                            </div>
                         </Col>
                     </Row>
                     <Row className="my-3 mt-auto">
