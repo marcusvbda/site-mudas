@@ -18,7 +18,7 @@ const Home = () => {
 
     return (
         <LandingTemplate title="Home" isMobile={app.isMobile}>
-            <div className="mb-4">
+            <div className="mb-5">
                 <Carousel isMobile={app.isMobile} />
             </div>
             <section id="saber-mais">
