@@ -5,6 +5,7 @@ import { Container, Row, Col, Image, Card } from 'react-bootstrap'
 import Carousel from "@/src/components/home/carousel"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faQuoteLeft, faQuoteRight, faStar } from '@fortawesome/free-solid-svg-icons'
+import YouTube from 'react-youtube'
 
 const Home = () => {
     const { app } = useContext(GlobalContext)
@@ -25,7 +26,7 @@ const Home = () => {
                     </Row>
                 </Container>
                 <Container>
-                    <Row id="saber-mais" className="mt-3">
+                    <Row id="saber-mais" className="mt-3 mb-4">
                         <Col xs={12} md={6}>
                             <span>
                                 <p className="mb-0">
@@ -44,9 +45,7 @@ const Home = () => {
                         </Col>
                         <Col xs={12} md={6}>
                             <div className="container-img">
-                                <iframe
-                                    src="https://www.youtube.com/embed/cXhPbYtUXTc"
-                                />
+                                <YouTube videoId="cXhPbYtUXTc" />
                             </div>
                         </Col>
                     </Row>
