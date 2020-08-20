@@ -7,7 +7,7 @@ const CarouselMobile = ({ timeout }) => {
         <Carousel interval={timeout}>
             <Carousel.Item>
                 <div className="carousel-image mobile" style={{
-                    backgroundImage: `url(/home/viveiro.jfif)`
+                    backgroundImage: `url(/home/viveiro.jpg)`
                 }}>
                     <Container className="pb-5">
                         <div className="carousel-item-content">
@@ -21,7 +21,7 @@ const CarouselMobile = ({ timeout }) => {
             </Carousel.Item>
             <Carousel.Item>
                 <div className="carousel-image mobile" style={{
-                    backgroundImage: `url(/home/flor.jfif)`
+                    backgroundImage: `url(/home/flor.jpg)`
                 }}>
                     <Container className="pb-5">
                         <div className="carousel-item-content">

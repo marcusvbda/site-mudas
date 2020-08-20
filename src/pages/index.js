@@ -56,7 +56,7 @@ const Home = () => {
                             description="Um novo futuro pode começar com você !"
                         />
                         <MotionCard
-                            image="/home/flor.jfif"
+                            image="/home/flor.jpg"
                             type="purple"
                             title="Permita Florecer 🌹"
                             description="Tudo que floresce na nossa vida é resultado do que cultivamos !"
@@ -77,7 +77,7 @@ const Home = () => {
                     </h1>
                     <Row>
                         <TestimonalCard
-                            image="/home/person_1.jfif"
+                            image="/home/person_1.jpg"
                             name="Silvana P. Goulart"
                             stars={5}
                         >
@@ -86,7 +86,7 @@ const Home = () => {
                             Cras varius dolor sit amet quam malesuada, eget sodales massa rutrum.
                         </TestimonalCard>
                         <TestimonalCard
-                            image="/home/person_2.jfif"
+                            image="/home/person_2.jpg"
                             name="Marco Antonio Coutinho"
                             stars={5}
                         >
@@ -95,7 +95,7 @@ const Home = () => {
                             Cras varius dolor sit amet quam malesuada, eget sodales massa rutrum.
                         </TestimonalCard>
                         <TestimonalCard
-                            image="/home/person_3.jfif"
+                            image="/home/person_3.jpg"
                             name="Paulo Constantino"
                             stars={5}
                         >
