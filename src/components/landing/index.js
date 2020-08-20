@@ -143,6 +143,7 @@ const LandingTemplate = ({ title, children, isMobile }) => {
                 <div className="d-flex flex-row justify-content-md-between justify-content-center align-items-center">
                     <ReactIf condition={!isMobile}>
                         <Image src="/logo.png"
+                            className="d-none d-md-block"
                             height="50"
                             alt="Carvalho Mudas" />
                     </ReactIf>
@@ -155,7 +156,9 @@ const LandingTemplate = ({ title, children, isMobile }) => {
                         <SocialIcons />
                     </small>
                     <ReactIf condition={!isMobile}>
-                        <GetYear />
+                        <div className="d-none d-md-block">
+                            <GetYear />
+                        </div>
                     </ReactIf>
                 </div>
             </footer>
