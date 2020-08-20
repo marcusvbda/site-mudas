@@ -5,7 +5,7 @@ import Head from 'next/head'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome, faAddressCard, faLeaf, faEnvelope, faCompass, faPhone, faMobile, faBraille, faBriefcase } from '@fortawesome/free-solid-svg-icons'
 import { faFacebook, faWhatsapp, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons'
-import ReactIf from '@/components/logic/react-if'
+import ReactIf from '@/src/components/logic/react-if'
 
 const LandingTemplate = ({ title, children, isMobile }) => {
 

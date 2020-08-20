@@ -1,8 +1,8 @@
 import React, { useContext } from 'react'
-import { GlobalContext } from '@/context/globalContext'
-import LandingTemplate from '@/components/landing'
+import { GlobalContext } from '@/src/context/globalContext'
+import LandingTemplate from '@/src/components/landing'
 import { Container, Row, Col } from 'react-bootstrap'
-import Carousel from "@/components/home/carousel"
+import Carousel from "@/src/components/home/carousel"
 
 const Home = () => {
     const { app } = useContext(GlobalContext)
