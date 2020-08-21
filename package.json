@@ -1,7 +1,7 @@
 {
   "name": "site-mudas-carvalho",
   "version": "1.0.0",
-  "description": "",
+  "description": "mudas carvalho",
   "main": "index.js",
   "scripts": {
     "dev": "next",
