@@ -57,14 +57,14 @@ const Home = () => {
                             name="Silvana P. Goulart"
                             rate={5}
                         >
-                            Procure em todos o viveiros conhecidos os produtos que eu estava precisando, porém o único lugar onde encontrei tudo foi na Mudas Carvalho, e o melhor, por um ótimo preço.
+                            Procurei em todos o viveiros conhecidos os produtos que eu estava precisando, porém o único lugar onde encontrei tudo foi na Mudas Carvalho, e o melhor, por um ótimo preço.
                         </TestimonalCard>
                         <TestimonalCard
                             image="/home/person_2.webp"
                             name="Marco Antonio Coutinho"
                             rate={5}
                         >
-                            Desde a abertura da minha empresa, todos os produtos de paisagismo que preciso encontro no Mudas Carvalho, além de ótimo antendiment sempre sair dela lá extremamente satisfeito. Indico muito !
+                            Desde a abertura da minha empresa, todos os produtos de paisagismo que preciso encontro no Mudas Carvalho, além de ótimo atendimento sempre saí dela lá extremamente satisfeito. Indico muito !
                         </TestimonalCard>
                         <TestimonalCard
                             image="/home/person_3.webp"
