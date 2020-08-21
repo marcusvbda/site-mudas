@@ -11,7 +11,7 @@ const Home = () => {
     const { app } = useContext(GlobalContext)
     // 
     return (
-        <LandingTemplate isMobile={app.isMobile}>
+        <LandingTemplate title="Home" isMobile={app.isMobile}>
             <div className="mb-5">
                 <Carousel isMobile={app.isMobile} />
             </div>
