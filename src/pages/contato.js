@@ -31,7 +31,7 @@ const Contact = () => {
             <Container className="mb-5">
                 <h3 className="font-weight-light f-50 my-4 text-md-left text-sm-center">✉️ Contato</h3>
                 <Row>
-                    <Col xs={12} md={6} className="d-flex justify-content-center flex-column mb-3">
+                    <Col xs={12} md={6} className="d-flex justify-content-center flex-column mb-5">
                         <h4 className="font-weight-light mb-5">
                             Nos envie um email, nos telefone ou mande uma mensagem nas nossa redes sociais, o atenderemos com o maior carinho 💚
                         </h4>
