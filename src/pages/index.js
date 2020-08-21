@@ -50,19 +50,19 @@ const Home = () => {
                     </h1>
                     <Row className="pb-5">
                         <MotionCard
-                            image="/home/plante.jpg"
+                            image="/home/plante.webp"
                             type="green"
                             title="Plante uma Arvore 🌴"
                             description="Um novo futuro pode começar com você !"
                         />
                         <MotionCard
-                            image="/home/flor.jpg"
+                            image="/home/flor.webp"
                             type="purple"
                             title="Permita Florecer 🌹"
                             description="Tudo que floresce na nossa vida é resultado do que cultivamos !"
                         />
                         <MotionCard
-                            image="/home/jabuticabeira.jpg"
+                            image="/home/jabuticabeira.webp"
                             type="black"
                             title="Adoce a Vida 🍍"
                             description="De mais sabor ao mundo e adoce o dia das pessoas colhendo frutas !"
@@ -77,21 +77,21 @@ const Home = () => {
                     </h1>
                     <Row>
                         <TestimonalCard
-                            image="/home/person_1.jpg"
+                            image="/home/person_1.webp"
                             name="Silvana P. Goulart"
                             stars={5}
                         >
                             Procure em todos o viveiros conhecidos os produtos que eu estava precisando, porém o único lugar onde encontrei tudo foi na Mudas Carvalho, e o melhor, por um ótimo preço.
                         </TestimonalCard>
                         <TestimonalCard
-                            image="/home/person_2.jpg"
+                            image="/home/person_2.webp"
                             name="Marco Antonio Coutinho"
                             stars={5}
                         >
                             Desde a abertura da minha empresa, todos os produtos de paisagismo que preciso encontro no Mudas Carvalho, além de ótimo antendiment sempre sair dela lá extremamente satisfeito. Indico muito !
                         </TestimonalCard>
                         <TestimonalCard
-                            image="/home/person_3.jpg"
+                            image="/home/person_3.webp"
                             name="Paulo Constantino"
                             stars={5}
                         >

@@ -90,7 +90,7 @@ const LandingTemplate = ({ title, children, isMobile }) => {
                     <Link href="/">
                         <a>
                             <Navbar.Brand className="cursor-pointer pt-0">
-                                <Image src="/logo.png"
+                                <Image src="/logo.webp"
                                     height={isMobile ? 50 : 75}
                                     alt="Carvalho Mudas" />
                             </Navbar.Brand>
@@ -134,7 +134,7 @@ const LandingTemplate = ({ title, children, isMobile }) => {
             <div className="floating-area">
                 <a href="http://wa.me/+5514997210771" target="_blank" className="floating-wpp shadow">
                     <div className="ball">
-                        <Image src="/wpp.png" alt="Whatsapp" />
+                        <Image src="/wpp.webp" alt="Whatsapp" />
                     </div>
                     <span className="title">FALE CONOSCO !</span>
                 </a>
@@ -142,7 +142,7 @@ const LandingTemplate = ({ title, children, isMobile }) => {
             <footer className="footer container text-muted mt-4">
                 <div className="d-flex flex-row justify-content-md-between justify-content-center align-items-center">
                     <ReactIf condition={!isMobile}>
-                        <Image src="/logo.png"
+                        <Image src="/logo.webp"
                             className="d-none d-md-block"
                             height="50"
                             alt="Carvalho Mudas" />
