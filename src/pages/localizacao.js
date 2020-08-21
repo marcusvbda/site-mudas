@@ -3,7 +3,7 @@ import Template from '@/src/components/template'
 import { GlobalContext } from '@/src/context/globalContext'
 import { Container, Row, Col } from 'react-bootstrap'
 import dynamic from 'next/dynamic'
-const Iframe = dynamic(() => import('@/src/components/logic/Iframe'))
+const Iframe = dynamic(() => import('@/src/components/logic/iframe'))
 
 const Location = () => {
     const { app } = useContext(GlobalContext)
