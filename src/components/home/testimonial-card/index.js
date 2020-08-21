@@ -1,15 +1,10 @@
 import React from 'react'
-import { Container, Row, Col, Image, Card } from 'react-bootstrap'
+import { Row, Col, Image, Card } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faQuoteLeft, faQuoteRight, faStar } from '@fortawesome/free-solid-svg-icons'
 import "./styles.scss"
 
-const TestimonalCard = ({ children, name, image, stars }) => {
-    const Rate = () => {
-        let rate_stars = []
-        for (let i = 0;i < stars;i++) rate_stars.push(<FontAwesomeIcon key={i} icon={faStar} className="text-mudas" style={{ fontSize: 30 }} />)
-        return rate_stars
-    }
+const TestimonalCard = ({ children, name, image, rate }) => {
 
     return (
         <Col md={4} sm={12} className="d-flex align-items-strench mb-3">
@@ -22,7 +17,9 @@ const TestimonalCard = ({ children, name, image, stars }) => {
                     </Row>
                     <Row>
                         <Col className="text-center mb-4">
-                            <Rate />
+                            {[...Array(rate)].map((star, i) => (
+                                <FontAwesomeIcon key={i} icon={faStar} className="text-golden" style={{ fontSize: 30 }} />
+                            ))}
                         </Col>
                     </Row>
                     <Row className="mb-3">

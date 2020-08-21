@@ -2,12 +2,11 @@ import React, { useContext } from 'react'
 import { GlobalContext } from '@/src/context/globalContext'
 import Template from '@/src/components/template'
 import { Container, Row, Col } from 'react-bootstrap'
-
 import dynamic from 'next/dynamic'
 const Carousel = dynamic(() => import('@/src/components/home/carousel'))
+const Iframe = dynamic(() => import('@/src/components/logic/iframe'))
 const TestimonalCard = dynamic(() => import('@/src/components/home/testimonial-card'))
 const MotionCard = dynamic(() => import('@/src/components/home/motion-card'))
-const YouTube = dynamic(() => import('react-youtube'))
 
 const Home = () => {
     const { app } = useContext(GlobalContext)
@@ -25,7 +24,9 @@ const Home = () => {
                     <Row id="saber-mais" className="mt-3 mb-4">
                         <Col xs={12} md={6}>
                             <p className="mb-0">
-                                A <b className="text-mudas ml-1">MUDAS CARVALHO</b>, está no mercado desde 1987, prestando serviços e produtos de qualidade.
+                                A
+                                <b className="text-mudas ml-1">MUDAS CARVALHO</b>,
+                                está no mercado desde 1987, prestando serviços e produtos de qualidade.
                             </p>
                             <p className="mb-0">
                                 Ao decorrer deste 21 anos fomos nos especializando na produção de mudas frutíferas produzindo, que são vendidas no torrão ou em latas de 20 litros. Também continuamos oferecendo as tradicionais mudas em embalagens plásticas de saquinhos.
@@ -37,10 +38,10 @@ const Home = () => {
                                 Esperamos que você venha conhecer nossos produtos e serviços, nos quais são distribuidos em todo território brasileiro.
                             </p>
                         </Col>
-                        <Col xs={12} md={6}>
-                            <div className="container-img">
-                                <YouTube videoId="cXhPbYtUXTc" />
-                            </div>
+                        <Col xs={12} md={6} className="container-iframe" style={{ height: 350 }}>
+                            <Iframe
+                                src="https://www.youtube.com/embed/cXhPbYtUXTc"
+                            />
                         </Col>
                     </Row>
                 </Container>
@@ -81,21 +82,21 @@ const Home = () => {
                         <TestimonalCard
                             image="/home/person_1.webp"
                             name="Silvana P. Goulart"
-                            stars={5}
+                            rate={5}
                         >
                             Procure em todos o viveiros conhecidos os produtos que eu estava precisando, porém o único lugar onde encontrei tudo foi na Mudas Carvalho, e o melhor, por um ótimo preço.
                         </TestimonalCard>
                         <TestimonalCard
                             image="/home/person_2.webp"
                             name="Marco Antonio Coutinho"
-                            stars={5}
+                            rate={5}
                         >
                             Desde a abertura da minha empresa, todos os produtos de paisagismo que preciso encontro no Mudas Carvalho, além de ótimo antendiment sempre sair dela lá extremamente satisfeito. Indico muito !
                         </TestimonalCard>
                         <TestimonalCard
                             image="/home/person_3.webp"
                             name="Paulo Constantino"
-                            stars={5}
+                            rate={5}
                         >
                             Meu pai apresentou a Mudas Carvalho, disse que eu poderia procurar tudo que precisar lá.
                             desde então nunca precisei de outro viveiro.

@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { Navbar, Nav, Image, Container } from 'react-bootstrap'
 import Head from 'next/head'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faLeaf, faEnvelope, faCompass, faPhone, faMobile, faBraille, faBriefcase } from '@fortawesome/free-solid-svg-icons'
+import { faHome, faLeaf, faEnvelope, faCompass, faPhone, faMobile, faBraille, faBriefcase, faAddressCard } from '@fortawesome/free-solid-svg-icons'
 import { faFacebook, faWhatsapp, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons'
 import ReactIf from '@/src/components/logic/react-if'
 
@@ -102,6 +102,11 @@ const Template = ({ title, children, isMobile, current }) => {
                             <Link href="/">
                                 <a className={`nav-link text-secondary ${current == 'home' ? 'active' : ''}`}>
                                     <FontAwesomeIcon icon={faHome} className="mr-2" />Home
+                                </a>
+                            </Link>
+                            <Link href="/#saber-mais">
+                                <a className={`nav-link text-secondary ${current == 'about' ? 'active' : ''}`}>
+                                    <FontAwesomeIcon icon={faAddressCard} className="mr-2" />Sobre
                                 </a>
                             </Link>
                             <Link href="/produtos">
