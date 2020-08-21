@@ -9,9 +9,9 @@ import MotionCard from '@/src/components/home/motion-card'
 
 const Home = () => {
     const { app } = useContext(GlobalContext)
-
+    // 
     return (
-        <LandingTemplate title="Home" isMobile={app.isMobile}>
+        <LandingTemplate isMobile={app.isMobile}>
             <div className="mb-5">
                 <Carousel isMobile={app.isMobile} />
             </div>
