@@ -3,11 +3,13 @@ import Link from 'next/link'
 import { Navbar, Nav, Image, Container } from 'react-bootstrap'
 import Head from 'next/head'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faLeaf, faEnvelope, faCompass, faPhone, faMobile, faBraille, faBriefcase, faAddressCard } from '@fortawesome/free-solid-svg-icons'
-import { faFacebook, faWhatsapp, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { faHome, faLeaf, faEnvelope, faCompass, faBraille, faBriefcase, faAddressCard } from '@fortawesome/free-solid-svg-icons'
 import ReactIf from '@/src/components/logic/react-if'
+import dynamic from 'next/dynamic'
+const SocialIcons = dynamic(() => import('@/src/components/template/partials/social-icons'))
+const PhonesRow = dynamic(() => import('@/src/components/template/partials/phones-row'))
 
-const Template = ({ title, children, isMobile, current }) => {
+const Template = ({ title, children, isMobile, current, hidefooter }) => {
 
     const GetTitle = () => {
         const defaultTitle = "Mudas Carvalho"
@@ -29,33 +31,34 @@ const Template = ({ title, children, isMobile, current }) => {
         )
     }
 
-    const PhonesRow = () => {
+    const Footer = () => {
+        if (hidefooter === true) return (<></>)
         return (
-            <span className="d-flex align-items-center justify-content-center my-1" >
-                <FontAwesomeIcon icon={faPhone} className="mr-1" />
-                <a className="text-secondary" href="tel:+551434861376">(14) 3486-1376</a>
-                <FontAwesomeIcon icon={faMobile} className="ml-3 mr-1" />
-                <a className="text-secondary" href="tel:+5514997210771">(14) 99721-0771</a>
-            </span>
-        )
-    }
-
-    const SocialIcons = () => {
-        return (
-            <div className="d-flex flex-row justify-content-center">
-                <a href="http://wa.me/+5514997210771" className="text-secondary" target="_blank" rel="noreferrer">
-                    <FontAwesomeIcon icon={faWhatsapp} style={{ fontSize: 25 }} className="mx-1" />
-                </a>
-                <a href="https://www.instagram.com/mudascarvalho" className="text-secondary" target="_blank" rel="noreferrer">
-                    <FontAwesomeIcon icon={faFacebook} style={{ fontSize: 25 }} className="mx-1" />
-                </a>
-                <a href="https://www.instagram.com/mudascarvalho" className="text-secondary" target="_blank" rel="noreferrer">
-                    <FontAwesomeIcon icon={faInstagram} style={{ fontSize: 25 }} className="mx-1" />
-                </a>
-                <a href="https://www.youtube.com/channel/UCw3Si5-MCBwI-LTyPmrwsYA" className="text-secondary" target="_blank" rel="noreferrer">
-                    <FontAwesomeIcon icon={faYoutube} style={{ fontSize: 25 }} className="mx-1" />
-                </a>
-            </div>
+            <footer className="footer container text-secondary mt-4">
+                <div className="d-flex flex-row justify-content-md-between justify-content-center align-items-center">
+                    <ReactIf condition={!isMobile}>
+                        <Image src="/logo.webp"
+                            className="d-none d-md-block"
+                            height="50"
+                            alt="Carvalho Mudas" />
+                    </ReactIf>
+                    <small className="flex-column d-flex">
+                        <a className="text-secondary" href="mailto:vendas@mudascarvalho.com.br">
+                            <span className="d-flex align-items-center justify-content-center" >
+                                <FontAwesomeIcon icon={faEnvelope} className="mr-1" />
+                                <span>vendas@mudascarvalho.com.br</span>
+                            </span>
+                        </a>
+                        <PhonesRow />
+                        <SocialIcons />
+                    </small>
+                    <ReactIf condition={!isMobile}>
+                        <div className="d-none d-md-block">
+                            <GetYear />
+                        </div>
+                    </ReactIf>
+                </div>
+            </footer>
         )
     }
 
@@ -104,7 +107,7 @@ const Template = ({ title, children, isMobile, current }) => {
                                     <FontAwesomeIcon icon={faHome} className="mr-2" />Home
                                 </a>
                             </Link>
-                            <Link href="/#saber-mais">
+                            <Link href="/sobre">
                                 <a className={`nav-link text-secondary ${current == 'about' ? 'active' : ''}`}>
                                     <FontAwesomeIcon icon={faAddressCard} className="mr-2" />Sobre
                                 </a>
@@ -145,31 +148,7 @@ const Template = ({ title, children, isMobile, current }) => {
                     <span className="title">FALE CONOSCO !</span>
                 </a>
             </div>
-            <footer className="footer container text-secondary mt-4">
-                <div className="d-flex flex-row justify-content-md-between justify-content-center align-items-center">
-                    <ReactIf condition={!isMobile}>
-                        <Image src="/logo.webp"
-                            className="d-none d-md-block"
-                            height="50"
-                            alt="Carvalho Mudas" />
-                    </ReactIf>
-                    <small className="flex-column d-flex">
-                        <a className="text-secondary" href="mailto:vendas@mudascarvalho.com.br">
-                            <span className="d-flex align-items-center justify-content-center" >
-                                <FontAwesomeIcon icon={faEnvelope} className="mr-1" />
-                                <span>vendas@mudascarvalho.com.br</span>
-                            </span>
-                        </a>
-                        <PhonesRow />
-                        <SocialIcons />
-                    </small>
-                    <ReactIf condition={!isMobile}>
-                        <div className="d-none d-md-block">
-                            <GetYear />
-                        </div>
-                    </ReactIf>
-                </div>
-            </footer>
+            <Footer />
         </>
     )
 }
