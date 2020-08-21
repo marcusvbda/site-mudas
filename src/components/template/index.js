@@ -33,9 +33,9 @@ const Template = ({ title, children, isMobile, current }) => {
         return (
             <span className="d-flex align-items-center justify-content-center my-1" >
                 <FontAwesomeIcon icon={faPhone} className="mr-1" />
-                <a className="text-muted" href="tel:+551434861376">(14) 3486-1376</a>
+                <a className="text-secondary" href="tel:+551434861376">(14) 3486-1376</a>
                 <FontAwesomeIcon icon={faMobile} className="ml-3 mr-1" />
-                <a className="text-muted" href="tel:+5514997210771">(14) 99721-0771</a>
+                <a className="text-secondary" href="tel:+5514997210771">(14) 99721-0771</a>
             </span>
         )
     }
@@ -43,16 +43,16 @@ const Template = ({ title, children, isMobile, current }) => {
     const SocialIcons = () => {
         return (
             <div className="d-flex flex-row justify-content-center">
-                <a href="http://wa.me/+5514997210771" className="muted-icon" target="_blank">
+                <a href="http://wa.me/+5514997210771" className="text-secondary" target="_blank" rel="noreferrer">
                     <FontAwesomeIcon icon={faWhatsapp} style={{ fontSize: 25 }} className="mx-1" />
                 </a>
-                <a href="https://www.instagram.com/mudascarvalho" className="muted-icon" target="_blank">
+                <a href="https://www.instagram.com/mudascarvalho" className="text-secondary" target="_blank" rel="noreferrer">
                     <FontAwesomeIcon icon={faFacebook} style={{ fontSize: 25 }} className="mx-1" />
                 </a>
-                <a href="https://www.instagram.com/mudascarvalho" className="muted-icon" target="_blank">
+                <a href="https://www.instagram.com/mudascarvalho" className="text-secondary" target="_blank" rel="noreferrer">
                     <FontAwesomeIcon icon={faInstagram} style={{ fontSize: 25 }} className="mx-1" />
                 </a>
-                <a href="https://www.youtube.com/channel/UCw3Si5-MCBwI-LTyPmrwsYA" className="muted-icon" target="_blank">
+                <a href="https://www.youtube.com/channel/UCw3Si5-MCBwI-LTyPmrwsYA" className="text-secondary" target="_blank" rel="noreferrer">
                     <FontAwesomeIcon icon={faYoutube} style={{ fontSize: 25 }} className="mx-1" />
                 </a>
             </div>
@@ -70,7 +70,7 @@ const Template = ({ title, children, isMobile, current }) => {
             <ReactIf condition={!isMobile}>
                 <Navbar expand="md" bg="ligth" className="top-contact d-none d-md-block">
                     <Container>
-                        <small className="text-muted flex-row d-flex">
+                        <small className="text-secondary flex-row d-flex">
                             <span className="d-flex align-items-center" >
                                 <FontAwesomeIcon icon={faEnvelope} className="mr-1" />
                                 <span>vendas@mudascarvalho.com.br</span>
@@ -100,27 +100,27 @@ const Template = ({ title, children, isMobile, current }) => {
                     <Navbar.Collapse>
                         <Nav className="ml-auto">
                             <Link href="/">
-                                <a className={`nav-link ${current == 'home' ? 'active' : ''}`}>
+                                <a className={`nav-link text-secondary ${current == 'home' ? 'active' : ''}`}>
                                     <FontAwesomeIcon icon={faHome} className="mr-2" />Home
                                 </a>
                             </Link>
                             <Link href="/produtos">
-                                <a className={`nav-link ${current == 'products' ? 'active' : ''}`}>
+                                <a className={`nav-link text-secondary ${current == 'products' ? 'active' : ''}`}>
                                     <FontAwesomeIcon icon={faLeaf} className="mr-2" />Produtos
                                 </a>
                             </Link>
                             <Link href="/servicos">
-                                <a className={`nav-link ${current == 'services' ? 'active' : ''}`}>
+                                <a className={`nav-link text-secondary ${current == 'services' ? 'active' : ''}`}>
                                     <FontAwesomeIcon icon={faBriefcase} className="mr-2" />Serviços
                                 </a>
                             </Link>
                             <Link href="/contato">
-                                <a className={`nav-link ${current == 'contact' ? 'active' : ''}`}>
+                                <a className={`nav-link text-secondary ${current == 'contact' ? 'active' : ''}`}>
                                     <FontAwesomeIcon icon={faEnvelope} className="mr-2" />Contato
                                 </a>
                             </Link>
                             <Link href="/localizacao">
-                                <a className={`nav-link ${current == 'location' ? 'active' : ''}`}>
+                                <a className={`nav-link text-secondary ${current == 'location' ? 'active' : ''}`}>
                                     <FontAwesomeIcon icon={faCompass} className="mr-2" />Localização
                                 </a>
                             </Link>
@@ -133,14 +133,14 @@ const Template = ({ title, children, isMobile, current }) => {
                 {children}
             </main>
             <div className="floating-area">
-                <a href="http://wa.me/+5514997210771" target="_blank" className="floating-wpp shadow">
+                <a href="http://wa.me/+5514997210771" target="_blank" className="floating-wpp shadow" rel="noreferrer">
                     <div className="ball">
                         <Image src="/wpp.webp" alt="Whatsapp" />
                     </div>
                     <span className="title">FALE CONOSCO !</span>
                 </a>
             </div>
-            <footer className="footer container text-muted mt-4">
+            <footer className="footer container text-secondary mt-4">
                 <div className="d-flex flex-row justify-content-md-between justify-content-center align-items-center">
                     <ReactIf condition={!isMobile}>
                         <Image src="/logo.webp"
@@ -148,11 +148,13 @@ const Template = ({ title, children, isMobile, current }) => {
                             height="50"
                             alt="Carvalho Mudas" />
                     </ReactIf>
-                    <small className="text-muted flex-column d-flex">
-                        <span className="d-flex align-items-center justify-content-center" >
-                            <FontAwesomeIcon icon={faEnvelope} className="mr-1" />
-                            <span>vendas@mudascarvalho.com.br</span>
-                        </span>
+                    <small className="flex-column d-flex">
+                        <a className="text-secondary" href="mailto:vendas@mudascarvalho.com.br">
+                            <span className="d-flex align-items-center justify-content-center" >
+                                <FontAwesomeIcon icon={faEnvelope} className="mr-1" />
+                                <span>vendas@mudascarvalho.com.br</span>
+                            </span>
+                        </a>
                         <PhonesRow />
                         <SocialIcons />
                     </small>

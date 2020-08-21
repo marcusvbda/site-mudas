@@ -48,7 +48,7 @@ const CarouselDesktop = ({ timeout }) => {
                             <strong>PRECISA DE AJUDA</strong>
                             <p>Entre e contato conosco por Whatsapp e tire todas suas dúvidas com algúm membro de nossa equipe comercial !</p>
                             <div className="mt-3">
-                                <a href="http://wa.me/+5514997210771" target="_blank">
+                                <a href="http://wa.me/+5514997210771" target="_blank" rel="noreferrer">
                                     <Button variant="success">Conversar No Whatsapp</Button>
                                 </a>
                             </div>

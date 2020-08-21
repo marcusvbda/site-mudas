@@ -36,13 +36,6 @@ button {
 	background-color: #efefef;
 }
 
-.muted-icon {
-	color : rgba(0, 0, 0, 0.5);
-	&:hover {
-		color : #656565;
-		transition:.4s;
-	}
-}
 
 footer {
 	&.footer {
@@ -161,12 +154,9 @@ footer {
 }
 
 .nav-link {
-    color : #a7a7a7!important;
-    &.active {
-        color : #709701!important;
-    }
-    &:hover {
-        transition:.4s;
-        color : #787878!important;
+    &.text-secondary {
+        &.active {
+            color : #709701!important;
+        }
     }
 }

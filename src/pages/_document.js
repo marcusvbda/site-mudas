@@ -1,5 +1,4 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
-
 class _Document extends Document {
     static async getInitialProps(ctx) {
         const initialProps = await Document.getInitialProps(ctx)
@@ -10,12 +9,17 @@ class _Document extends Document {
         return "Mudas Carvalho está no mercado desde 1987, prestando serviços e produtos de qualidade."
     }
 
+    getLogo() {
+        return `/logo.webp`
+    }
+
     render() {
         return (
-            <Html>
+            <Html lang="pt-br">
                 <Head>
                     <link rel="icon" href="/favicon.ico" />
-                    <meta property="og:image" content="/logo.webp" />
+                    <link rel="apple-touch-icon" href={this.getLogo()} />
+                    <meta property="og:image" content={this.getLogo()} />
                     <meta property="og:url" content="image/png" />
                     <meta property="og:description" content={this.getDescription()} />
                     <meta property="og:type" content="website" />
