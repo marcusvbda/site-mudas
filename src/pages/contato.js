@@ -4,9 +4,8 @@ import { GlobalContext } from '@/src/context/globalContext'
 import { Container, Row, Col, Form, Button } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPaperPlane, faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import dynamic from 'next/dynamic'
-const SocialIcons = dynamic(() => import('@/src/components/template/partials/social-icons'))
-const PhonesRow = dynamic(() => import('@/src/components/template/partials/phones-row'))
+import SocialIcons from '@/src/components/template/partials/social-icons'
+import PhonesRow from '@/src/components/template/partials/phones-row'
 
 const Contact = () => {
     const [emailForm, setEmailForm] = useState({
