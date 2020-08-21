@@ -31,7 +31,7 @@ const Contact = () => {
             <Container className="mb-5">
                 <h3 className="font-weight-light f-50 my-4 text-md-left text-sm-center">✉️ Contato</h3>
                 <Row>
-                    <Col xs={12} md={6} className="d-flex justify-content-center flex-column">
+                    <Col xs={12} md={6} className="d-flex justify-content-center flex-column mb-3">
                         <h4 className="font-weight-light mb-5">
                             Nos envie um email, nos telefone ou mande uma mensagem nas nossa redes sociais, o atenderemos com o maior carinho 💚
                         </h4>
@@ -48,7 +48,7 @@ const Contact = () => {
                                 <Form.Label>Conteúdo de Email</Form.Label>
                                 <Form.Control as="textarea" rows={6} placeholder="Digite aqui o texto do seu email" onChange={e => setEmailForm({ ...emailForm, body: e.target.value })} />
                             </Form.Group>
-                            <Button variant="primary" type="submit">
+                            <Button variant="primary" type="submit" className="mb-5">
                                 <FontAwesomeIcon icon={faPaperPlane} className="mr-2" />Enviar Email
                             </Button>
                         </Form>
