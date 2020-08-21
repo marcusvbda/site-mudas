@@ -43,9 +43,9 @@ const Home = () => {
                     </Row>
                 </Container>
             </section>
-            <section className="bg-green py-5">
+            <section className="bg-green py-3">
                 <Container>
-                    <h1 className="font-weight-light my-4 text-md-right text-sm-center">
+                    <h1 className="font-weight-light mt-3 mb-4 text-md-right text-sm-center">
                         💚 UMA MUDA POR VEZ
                     </h1>
                     <Row className="pb-5">
@@ -70,9 +70,9 @@ const Home = () => {
                     </Row>
                 </Container>
             </section>
-            <section className="py-5">
+            <section className="pt-5 mb-3">
                 <Container>
-                    <h1 className="font-weight-light my-4 text-center">
+                    <h1 className="font-weight-light mt-2 mb-5 mb-4 text-center">
                         🤩 DEPOIMENTOS
                     </h1>
                     <Row>
@@ -81,31 +81,24 @@ const Home = () => {
                             name="Silvana P. Goulart"
                             stars={5}
                         >
-                            Nullam laoreet id orci cursus porttitor.
-                            Ut sodales felis at auctor facilisis.
-                            Cras varius dolor sit amet quam malesuada, eget sodales massa rutrum.
+                            Procure em todos o viveiros conhecidos os produtos que eu estava precisando, porém o único lugar onde encontrei tudo foi na Mudas Carvalho, e o melhor, por um ótimo preço.
                         </TestimonalCard>
                         <TestimonalCard
                             image="/home/person_2.jpg"
                             name="Marco Antonio Coutinho"
                             stars={5}
                         >
-                            Nullam laoreet id orci cursus porttitor.
-                            Ut sodales felis at auctor facilisis.
-                            Cras varius dolor sit amet quam malesuada, eget sodales massa rutrum.
+                            Desde a abertura da minha empresa, todos os produtos de paisagismo que preciso encontro no Mudas Carvalho, além de ótimo antendiment sempre sair dela lá extremamente satisfeito. Indico muito !
                         </TestimonalCard>
                         <TestimonalCard
                             image="/home/person_3.jpg"
                             name="Paulo Constantino"
                             stars={5}
                         >
-                            Maecenas rutrum accumsan venenatis.
-                            Cras nec viverra nisi.
-                            Aenean quam urna, laoreet pellentesque nisl non, blandit luctus nulla.
-                            Curabitur nec dui vulputate, rhoncus dui in, euismod enim.
-                            Etiam pellentesque quam ut sapien dictum imperdiet.
-                            Morbi non venenatis dolor.
-                            Mauris sit amet elit sodales.
+                            Meu pai apresentou a Mudas Carvalho, disse que eu poderia procurar tudo que precisar lá.
+                            desde então nunca precisei de outro viveiro.
+                            Eles são extremamente versáteis, têm uma variedade incrível de produtos o serviço é nota 11 .
+                            Sempre indiquei, e continuarei indicando.
                         </TestimonalCard>
                     </Row>
                 </Container>

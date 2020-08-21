@@ -12,9 +12,9 @@ const TestimonalCard = ({ children, name, image, stars }) => {
     }
 
     return (
-        <Col md={4} sm={12} className="d-flex align-items-strench">
+        <Col md={4} sm={12} className="d-flex align-items-strench mb-3">
             <Card className="testimonial-card shadow w-100">
-                <Card.Body className="d-flex flex-column pt-1">
+                <Card.Body className="d-flex flex-column">
                     <Row className="d-flex justify-content-center mb-4">
                         <Col xs={8} sm={8} md={6} className="imagecol">
                             <Image src={image} roundedCircle className="w-100 shadow" />
