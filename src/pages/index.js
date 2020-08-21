@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { GlobalContext } from '@/src/context/globalContext'
-import LandingTemplate from '@/src/components/landing'
+import Template from '@/src/components/template'
 import { Container, Row, Col } from 'react-bootstrap'
 import YouTube from 'react-youtube'
 import Carousel from '@/src/components/home/carousel'
@@ -9,9 +9,9 @@ import MotionCard from '@/src/components/home/motion-card'
 
 const Home = () => {
     const { app } = useContext(GlobalContext)
-    // 
+
     return (
-        <LandingTemplate title="Home" isMobile={app.isMobile}>
+        <Template title="Home" isMobile={app.isMobile} current="home">
             <div className="mb-5">
                 <Carousel isMobile={app.isMobile} />
             </div>
@@ -103,7 +103,7 @@ const Home = () => {
                     </Row>
                 </Container>
             </section>
-        </LandingTemplate >
+        </Template >
     )
 }
 export default Home

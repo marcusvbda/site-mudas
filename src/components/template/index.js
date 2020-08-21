@@ -3,11 +3,11 @@ import Link from 'next/link'
 import { Navbar, Nav, Image, Container } from 'react-bootstrap'
 import Head from 'next/head'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faAddressCard, faLeaf, faEnvelope, faCompass, faPhone, faMobile, faBraille, faBriefcase } from '@fortawesome/free-solid-svg-icons'
+import { faHome, faLeaf, faEnvelope, faCompass, faPhone, faMobile, faBraille, faBriefcase } from '@fortawesome/free-solid-svg-icons'
 import { faFacebook, faWhatsapp, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons'
 import ReactIf from '@/src/components/logic/react-if'
 
-const LandingTemplate = ({ title, children, isMobile }) => {
+const Template = ({ title, children, isMobile, current }) => {
 
     const GetTitle = () => {
         const defaultTitle = "Mudas Carvalho"
@@ -99,30 +99,31 @@ const LandingTemplate = ({ title, children, isMobile }) => {
                     <Navbar.Toggle />
                     <Navbar.Collapse>
                         <Nav className="ml-auto">
-                            <Nav.Link href="/">
-                                <FontAwesomeIcon icon={faHome} className="mr-2" />
-                                Home
-                            </Nav.Link>
-                            <Nav.Link href="/#saber-mais">
-                                <FontAwesomeIcon icon={faAddressCard} className="mr-2" />
-                                Sobre
-                            </Nav.Link>
-                            <Nav.Link href="/produtos">
-                                <FontAwesomeIcon icon={faLeaf} className="mr-2" />
-                                Produtos
-                            </Nav.Link>
-                            <Nav.Link href="/servicos">
-                                <FontAwesomeIcon icon={faBriefcase} className="mr-2" />
-                                Serviços
-                            </Nav.Link>
-                            <Nav.Link href="/contato">
-                                <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
-                                Contato
-                            </Nav.Link>
-                            <Nav.Link href="/localizacao">
-                                <FontAwesomeIcon icon={faCompass} className="mr-2" />
-                                Localização
-                            </Nav.Link>
+                            <Link href="/">
+                                <a className={`nav-link ${current == 'home' ? 'active' : ''}`}>
+                                    <FontAwesomeIcon icon={faHome} className="mr-2" />Home
+                                </a>
+                            </Link>
+                            <Link href="/produtos">
+                                <a className={`nav-link ${current == 'products' ? 'active' : ''}`}>
+                                    <FontAwesomeIcon icon={faLeaf} className="mr-2" />Produtos
+                                </a>
+                            </Link>
+                            <Link href="/servicos">
+                                <a className={`nav-link ${current == 'services' ? 'active' : ''}`}>
+                                    <FontAwesomeIcon icon={faBriefcase} className="mr-2" />Serviços
+                                </a>
+                            </Link>
+                            <Link href="/contato">
+                                <a className={`nav-link ${current == 'contact' ? 'active' : ''}`}>
+                                    <FontAwesomeIcon icon={faEnvelope} className="mr-2" />Contato
+                                </a>
+                            </Link>
+                            <Link href="/localizacao">
+                                <a className={`nav-link ${current == 'location' ? 'active' : ''}`}>
+                                    <FontAwesomeIcon icon={faCompass} className="mr-2" />Localização
+                                </a>
+                            </Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
@@ -165,4 +166,4 @@ const LandingTemplate = ({ title, children, isMobile }) => {
         </>
     )
 }
-export default LandingTemplate
+export default Template

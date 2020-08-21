@@ -159,3 +159,14 @@ footer {
         font-size: 30px;
     }
 }
+
+.nav-link {
+    color : #a7a7a7!important;
+    &.active {
+        color : #709701!important;
+    }
+    &:hover {
+        transition:.4s;
+        color : #787878!important;
+    }
+}
