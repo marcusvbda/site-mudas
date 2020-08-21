@@ -7,7 +7,7 @@ const CarouselDesktop = ({ timeout }) => {
         <Carousel interval={timeout} >
             <Carousel.Item>
                 <div className="carousel-image" style={{
-                    // backgroundImage: `url(/home/verde.webp)`
+                    backgroundImage: `url(/home/verde.webp)`
                 }}>
                     <Container className="pb-5">
                         <div className="carousel-item-content">
@@ -23,7 +23,7 @@ const CarouselDesktop = ({ timeout }) => {
             </Carousel.Item>
             <Carousel.Item>
                 <div className="carousel-image" style={{
-                    // backgroundImage: `url(/home/jabuticabeira.webp)`
+                    backgroundImage: `url(/home/jabuticabeira.webp)`
                 }}>
                     <Container className="pb-5">
                         <div className="carousel-item-content">
@@ -41,7 +41,7 @@ const CarouselDesktop = ({ timeout }) => {
             </Carousel.Item>
             <Carousel.Item>
                 <div className="carousel-image" style={{
-                    // backgroundImage: `url(/home/girassol.webp)`
+                    backgroundImage: `url(/home/girassol.webp)`
                 }}>
                     <Container className="pb-5">
                         <div className="carousel-item-content">

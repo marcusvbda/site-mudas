@@ -17,7 +17,7 @@ const TestimonalCard = ({ children, name, image, stars }) => {
                 <Card.Body className="d-flex flex-column">
                     <Row className="d-flex justify-content-center mb-4">
                         <Col xs={8} sm={8} md={6} className="imagecol">
-                            {/* <Image src={image} roundedCircle className="w-100 shadow" alt="testimonial" /> */}
+                            <Image src={image} roundedCircle className="w-100 shadow" alt="testimonial" />
                         </Col>
                     </Row>
                     <Row>
