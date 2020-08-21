@@ -17,9 +17,9 @@ const Home = () => {
             </div>
             <section id="saber-mais">
                 <Container>
-                    <h1 className="font-weight-light my-4 text-md-left text-sm-center">
+                    <h3 className="font-weight-light f-50 my-4 text-md-left text-sm-center">
                         💡 SOBRE NÓS
-                    </h1>
+                    </h3>
                     <Row id="saber-mais" className="mt-3 mb-4">
                         <Col xs={12} md={6}>
                             <p className="mb-0">
@@ -45,9 +45,9 @@ const Home = () => {
             </section>
             <section className="bg-green py-3">
                 <Container>
-                    <h1 className="font-weight-light mt-3 mb-4 text-md-right text-sm-center">
+                    <h3 className="font-weight-light f-50 mt-3 mb-4 text-md-right text-sm-center">
                         💚 UMA MUDA POR VEZ
-                    </h1>
+                    </h3>
                     <Row className="pb-5">
                         <MotionCard
                             image="/home/plante.webp"
@@ -72,9 +72,9 @@ const Home = () => {
             </section>
             <section className="pt-5 mb-3">
                 <Container>
-                    <h1 className="font-weight-light mt-2 mb-5 mb-4 text-center">
+                    <h3 className="font-weight-light f-50 mt-2 mb-4 text-center">
                         🤩 DEPOIMENTOS
-                    </h1>
+                    </h3>
                     <Row>
                         <TestimonalCard
                             image="/home/person_1.webp"
