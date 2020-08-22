@@ -26,16 +26,6 @@
     }
 }
 
-@media (max-width: 768px) {
-    .white-menu {
-        .container {
-            display: flex;
-            justify-content: center;
-        }
-    }
-}
-
-
 .fixed-navbar {
     &.fixed-top {
         animation: topToBottom 0.2s ease-in-out;

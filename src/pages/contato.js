@@ -47,7 +47,7 @@ const Contact = () => {
                                 <Form.Label>Conteúdo de Email</Form.Label>
                                 <Form.Control as="textarea" rows={6} placeholder="Digite aqui o texto do seu email" onChange={e => setEmailForm({ ...emailForm, body: e.target.value })} />
                             </Form.Group>
-                            <Button variant="primary" type="submit" className="mb-5">
+                            <Button variant="outline-success" type="submit" className="mb-5">
                                 <FontAwesomeIcon icon={faPaperPlane} className="mr-2" />Enviar Email
                             </Button>
                         </Form>

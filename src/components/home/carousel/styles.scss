@@ -21,15 +21,28 @@
             border-color: white;
         }
     }
+
     &.mobile {
         height: 350px;
     }
+
     strong {
         font-size: 60px;
     }
+
     @media(max-width:768px) {
         strong {
             font-size: 30px;
+        }
+
+        .react-typeout {
+            min-height: 44.8px;
+        }
+    }
+
+    @media(min-width : 768px) {
+        .react-typeout {
+            min-height: 89.6px;
         }
     }
 }
