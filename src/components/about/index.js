@@ -7,7 +7,7 @@ const Contact = () => {
     return (
         <Container>
             <h3 className="font-weight-light f-50 my-4 text-md-left text-sm-center">💡 SOBRE NÓS</h3>
-            <Row id="saber-mais" className="mt-3 mb-4">
+            <Row id="saber-mais" className="mt-4 mb-4">
                 <Col xs={12} md={6}>
                     <p className="mb-0">
                         A <b className="text-mudas ml-1">MUDAS CARVALHO</b>, está no mercado desde 1987, prestando serviços e produtos de qualidade.

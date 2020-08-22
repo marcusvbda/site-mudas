@@ -4,7 +4,7 @@ import { faFacebook, faWhatsapp, faInstagram, faYoutube } from '@fortawesome/fre
 
 const SocialIcons = () => {
     return (
-        <div className="d-flex flex-row justify-content-center">
+        <div className="d-flex flex-row justify-content-center align-items-center">
             <a href="http://wa.me/+5514997210771" className="text-secondary" target="_blank" rel="noreferrer">
                 <FontAwesomeIcon icon={faWhatsapp} style={{ fontSize: 25 }} className="mx-1" />
             </a>

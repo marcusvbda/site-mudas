@@ -27,6 +27,7 @@ class _Document extends Document {
                     {/* <meta name="google-site-verification" content="EjVfNL7-L50qFZGgRVeOhwjXySQrbkU4_XTsic2lvGMdsd" /> */}
                 </Head>
                 <body>
+                    <h2 className="d-none">{this.getDescription()}</h2>
                     <Main />
                     <NextScript />
                 </body>

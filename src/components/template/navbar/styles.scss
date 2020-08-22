@@ -1,0 +1,54 @@
+.gradient-bar {
+	height: 5px;
+    width: 100%;
+    background: rgb(3,54,23);
+    background: linear-gradient(90deg, rgba(3,54,23,1) 13%, rgba(124,131,23,1) 31%, rgba(255,127,0,1) 48%, rgba(120,133,24,1) 66%, rgba(111,139,25,1) 83%, rgba(25,139,113,1) 100%);
+}
+
+.top-contact {
+    background-color: #f7f7f7;
+    height: 50px;
+}
+
+.green-menu {
+    background-color: #71956b!important;
+    .nav-link {
+        &.active {
+            transition: .4s;
+            font-weight: 700;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .green-menu {
+       height: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .white-menu {
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+
+.fixed-navbar {
+    &.fixed-top {
+        animation: topToBottom 0.2s ease-in-out;
+
+        @keyframes topToBottom {
+            from {
+                top: -20px;
+            }
+            to {
+                top: 0px;
+            }
+        }
+
+        transition: position .5s;
+    }
+}

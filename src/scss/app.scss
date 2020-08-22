@@ -32,105 +32,12 @@ button {
 	}
 }
 
-.top-contact {
-	background-color: #efefef;
-}
-
-
-footer {
-	&.footer {
-		border-top: 1px solid #f6f6f6;
-		padding-top: 15px;
-		padding-bottom: 15px;
-	}
-}
-
-.gradient-bar {
-	height: 5px;
-    width: 100%;
-    background: rgb(3,54,23);
-    background: linear-gradient(90deg, rgba(3,54,23,1) 13%, rgba(124,131,23,1) 31%, rgba(255,127,0,1) 48%, rgba(120,133,24,1) 66%, rgba(111,139,25,1) 83%, rgba(25,139,113,1) 100%);
-}
-
-.floating-area {
-    position: fixed;
-    bottom: 140px;
-    right: 20px;
-    z-index: 999;
-    transition: .4s;
-    transform : scale(.95);
-    opacity: .7;
-    .floating-wpp {
-        color: #3fc250;
-        font-weight: 800;
-        text-decoration: unset;
-        .ball {
-            position: absolute;
-            left: -50px;
-            top: -25px;
-            border-radius: 100%;
-            img {
-                height: 75px;
-            }
-        }
-        .title {
-            background-color: white;
-            padding: 10px 20px 10px 30px;
-            border-radius: 50px;
-        }
-        @media(max-width:768px) {
-            .title {
-                display: none;
-                background-color: white;
-                padding: 10px 20px 10px 30px;
-                border-radius: 50px;
-            }
-            .ball {
-                img {
-                    height: 60px;
-                }
-            }
-        }
-    }
-
-    &:hover {
-        transform : scale(1);
-        opacity: 1;
-        text-decoration: none;
-        color: #238931;
-    }
-}
-
-@media(max-width:768px) {
-    .floating-area {
-        .floating-wpp {
-            opacity: .7;
-        }
-    }
-}
-
-
 .text-mudas {
     color : #6E8D0D;
 }
 
 .text-brown {
     color : #331200;
-}
-
-.container-img {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%;
-    iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        border:unset;
-        height: 100%;
-    }
 }
 
 .bg-green {
@@ -144,27 +51,11 @@ footer {
 }
 
 .f-50 {
-    font-size: 50px;
+    font-size: 40px;
 }
 
 @media(max-width:768px) {
     .f-50 {
         font-size: 30px;
-    }
-}
-
-.nav-link {
-    &.text-secondary {
-        &.active {
-            color : #709701!important;
-        }
-    }
-}
-
-.container-iframe {
-    iframe {
-        width: 100%;
-        height: 100%;
-        border: unset;
     }
 }

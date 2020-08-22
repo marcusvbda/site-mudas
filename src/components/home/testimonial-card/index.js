@@ -1,41 +1,35 @@
 import React from 'react'
 import { Row, Col, Image, Card } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faQuoteLeft, faQuoteRight, faStar } from '@fortawesome/free-solid-svg-icons'
+import { faStar } from '@fortawesome/free-solid-svg-icons'
 import "./styles.scss"
 
 const TestimonalCard = ({ children, name, image, rate }) => {
 
     return (
-        <Col md={4} sm={12} className="d-flex align-items-strench mb-3">
+        <Col md={3} sm={12} className="d-flex align-items-strench mb-3">
             <Card className="testimonial-card shadow w-100">
                 <Card.Body className="d-flex flex-column">
-                    <Row className="d-flex justify-content-center mb-4">
-                        <Col xs={8} sm={8} md={6} className="imagecol">
-                            <Image src={image} roundedCircle className="w-100 shadow" alt="testimonial" />
+                    <Row>
+                        <Col className="text-center mb-2">
+                            {[...Array(rate)].map((star, i) => (
+                                <FontAwesomeIcon key={i} icon={faStar} className="text-golden" style={{ fontSize: 15 }} />
+                            ))}
                         </Col>
                     </Row>
-                    <Row>
-                        <Col className="text-center mb-4">
-                            {[...Array(rate)].map((star, i) => (
-                                <FontAwesomeIcon key={i} icon={faStar} className="text-golden" style={{ fontSize: 30 }} />
-                            ))}
+                    <Row className="d-flex justify-content-center mb-2">
+                        <Col xs={6} sm={5} md={4} className="imagecol">
+                            <Image src={image} roundedCircle className="w-100 shadow" alt="testimonial" />
                         </Col>
                     </Row>
                     <Row className="mb-3">
                         <Col className="text-center d-flex flex-column">
-                            <div className="d-flex justify-content-start mb-3">
-                                <FontAwesomeIcon icon={faQuoteLeft} className="text-tree" style={{ fontSize: 20 }} />
-                            </div>
-                            {children}
-                            <div className="d-flex justify-content-end">
-                                <FontAwesomeIcon icon={faQuoteRight} className="text-tree mt-2" style={{ fontSize: 20 }} />
-                            </div>
+                            <small>{children}</small>
                         </Col>
                     </Row>
                     <Row className="my-3 mt-auto">
                         <Col className="text-center">
-                            <b>{name}</b>
+                            <small><b>{name}</b></small>
                         </Col>
                     </Row>
                 </Card.Body>

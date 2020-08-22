@@ -23,7 +23,7 @@ const Home = () => {
                     <h3 className="font-weight-light f-50 mt-3 mb-4 text-md-right text-sm-center">
                         💚 UMA MUDA POR VEZ
                     </h3>
-                    <Row className="pb-5">
+                    <Row className="pb-5 mt-3">
                         <MotionCard
                             image="/home/plante.webp"
                             type="green"
@@ -50,7 +50,7 @@ const Home = () => {
                     <h3 className="font-weight-light f-50 mt-2 mb-4 text-center">
                         🤩 DEPOIMENTOS
                     </h3>
-                    <Row>
+                    <Row className="d-flex justify-content-center mt-3">
                         <TestimonalCard
                             image="/home/person_1.webp"
                             name="Silvana P. Goulart"
