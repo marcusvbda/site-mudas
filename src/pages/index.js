@@ -2,10 +2,11 @@ import React, { useContext } from 'react'
 import { GlobalContext } from '@/src/context/globalContext'
 import Template from '@/src/components/template'
 import { Container, Row } from 'react-bootstrap'
-import Carousel from '@/src/components/home/carousel'
+import dynamic from 'next/dynamic'
+const Carousel = dynamic(() => import('@/src/components/home/carousel'))
 import About from '@/src/components/about'
-import TestimonalCard from '@/src/components/home/testimonial-card'
-import MotionCard from '@/src/components/home/motion-card'
+const TestimonalCard = dynamic(() => import('@/src/components/home/testimonial-card'))
+const MotionCard = dynamic(() => import('@/src/components/home/motion-card'))
 
 const Home = () => {
     const { app } = useContext(GlobalContext)
