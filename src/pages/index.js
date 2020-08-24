@@ -49,9 +49,11 @@ const Home = () => {
                 </Container>
             </section>
             <section id="instagram-section" className="py-5 mb-3">
-                <h3 className="font-weight-light f-50 mt-2 mb-4 text-center">
-                    ❤️ CURTA NOSSAS ÚLTIMAS POSTAGENS
+                <Container>
+                    <h3 className="font-weight-light f-50 mt-2 mb-4  text-md-left text-sm-center">
+                        ❤️ CURTA NOSSAS ÚLTIMAS POSTAGENS
                     </h3>
+                </Container>
                 <InstagramFeed
                     isMobile={app.isMobile}
                     username={"mudascarvalho"}
@@ -59,7 +61,7 @@ const Home = () => {
             </section>
             <section className="pt-5 mb-3">
                 <Container>
-                    <h3 className="font-weight-light f-50 mt-2 mb-4 text-center">
+                    <h3 className="font-weight-light f-50 mt-2 mb-4 text-left">
                         🤩 DEPOIMENTOS
                     </h3>
                     <Row className="d-flex justify-content-center mt-3">
