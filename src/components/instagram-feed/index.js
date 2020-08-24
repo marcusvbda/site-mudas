@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Instagram from './lib'
-import InstagramEmbed from 'react-instagram-embed'
+import dynamic from 'next/dynamic'
+const InstagramEmbed = dynamic(() => import('react-instagram-embed'))
 import { Container, Row, Col, Carousel } from 'react-bootstrap'
 import ReactIf from '@/src/components/logic/react-if'
 import "./styles.scss"
