@@ -20,7 +20,7 @@ const LocationPage = () => {
                 <Row className="mt-4 d-flex justify-content-center">
                     <Col className="container-iframe" style={{ height: 550 }}>
                         <Iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3699.130586051554!2d-50.394626285218735!3d-22.00630688547708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bf98d27ab09b3f%3A0x482a109285575ae6!2sRod.%20Cmte.%20Jo%C3%A3o%20Ribeiro%20de%20Barros%2C%20Hercul%C3%A2ndia%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1598042522192!5m2!1spt-BR!2sbr"
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14793.2378741892!2d-50.378915!3d-22.0377544!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9495bdfb8b4b582f%3A0x4a46331798202feb!2sMudas%20Carvalho!5e0!3m2!1spt-BR!2sbr!4v1598285766776!5m2!1spt-BR!2sbr"
                         />
                     </Col>
                 </Row>

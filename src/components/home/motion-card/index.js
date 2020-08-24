@@ -1,5 +1,6 @@
 import React from 'react'
 import { Col } from 'react-bootstrap'
+import Link from 'next/link'
 import "./styles.scss"
 
 const MotionCard = ({ description, title, image, type }) => {
@@ -8,10 +9,14 @@ const MotionCard = ({ description, title, image, type }) => {
             <div className="square-250" style={{
                 backgroundImage: `url(${image})`
             }}>
-                <div className={`container-tree d-flex flex-column ${type}`}>
-                    <span className="mb-4 title">{title}</span>
-                    <span className="description">{description}</span>
-                </div>
+                <Link href="/produtos" >
+                    <a>
+                        <div className={`container-tree d-flex flex-column ${type}`}>
+                            <span className="mb-4 title">{title}</span>
+                            <span className="description">{description}</span>
+                        </div>
+                    </a>
+                </Link>
             </div>
         </Col>
     )
