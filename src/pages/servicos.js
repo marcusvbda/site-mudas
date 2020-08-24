@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import Template from '@/src/components/template'
 import { GlobalContext } from '@/src/context/globalContext'
-import { Container, Row, Col } from 'react-bootstrap'
+import { Container, Row, Col, Image } from 'react-bootstrap'
 import ModalImage from "react-modal-image"
 
 const Services = () => {
@@ -15,10 +15,15 @@ const Services = () => {
 
             <Container>
                 <Row className="mb-4">
-                    <Col>
-                        Trabalhamos com uma variedade extensa de plantas de diversos tamanhos e espécies.
-                        Fazemos entregas e se desejado, fazemos a plantação das mudas !
-                        Um grande diferencial da empresa é o atendimento e a satisfação dos clientes.
+                    <Col md={6} sm={12}>
+                        Trabalhamos com uma variedade extensa de plantas de diversos tamanhos e espécies.<br />
+                        Fazemos entregas e se desejado, fazemos a plantação das mudas !<br />
+                        Um grande diferencial da empresa é o atendimento e a satisfação dos clientes.<br />
+                    </Col>
+                    <Col md={6} sm={12} className="d-flex justify-content-center">
+                        <Image src="/logo.webp"
+                            height={app.isMobile ? 50 : 75}
+                            alt="Carvalho Mudas" />
                     </Col>
                 </Row>
                 <Row className="d-flex align-items-center justify-content-center">
