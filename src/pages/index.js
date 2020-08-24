@@ -7,6 +7,8 @@ const Carousel = dynamic(() => import('@/src/components/home/carousel'))
 import About from '@/src/components/about'
 const TestimonalCard = dynamic(() => import('@/src/components/home/testimonial-card'))
 const MotionCard = dynamic(() => import('@/src/components/home/motion-card'))
+const InstagramFeed = dynamic(() => import('@/src/components/instagram-feed'))
+
 
 const Home = () => {
     const { app } = useContext(GlobalContext)
@@ -45,6 +47,15 @@ const Home = () => {
                         />
                     </Row>
                 </Container>
+            </section>
+            <section id="instagram-section" className="py-5 mb-3">
+                <h3 className="font-weight-light f-50 mt-2 mb-4 text-center">
+                    ❤️ CURTA NOSSAS ÚLTIMAS POSTAGENS
+                    </h3>
+                <InstagramFeed
+                    isMobile={app.isMobile}
+                    username={"mudascarvalho"}
+                />
             </section>
             <section className="pt-5 mb-3">
                 <Container>

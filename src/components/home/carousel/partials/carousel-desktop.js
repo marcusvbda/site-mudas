@@ -38,7 +38,7 @@ const CarouselDesktop = ({ timeout }) => {
                                 <TypeOut
                                     typeSpeed={100}
                                     pauseSpeed={2000}
-                                    words={["CONEÇA O VIVEIRO !", "NOS FAÇA UMA VISITA !"]}
+                                    words={["CONHEÇA O VIVEIRO !", "NOS FAÇA UMA VISITA !"]}
                                 />
                             </strong>
                             <p className="mb-0">Venha nos visitar e conheça nosso trabalho de perto !</p>
