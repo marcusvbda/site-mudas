@@ -59,15 +59,3 @@ button {
         font-size: 30px;
     }
 }
-.square-250 {
-    opacity: .9;
-    transition: .4s;
-    &:hover {
-        opacity: 1;
-    }
-    a {
-        &:hover {
-            text-decoration: unset;
-        }
-    }
-}

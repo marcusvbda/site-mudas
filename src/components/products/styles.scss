@@ -1,5 +1,8 @@
 .square-250 {
+    opacity: .9;
+    transition: .4s;
     cursor: pointer;
+    position: relative;
     height: 300px;
     width: 100%;
     border-radius: 5px;
@@ -8,6 +11,14 @@
     background-repeat: no-repeat;
     padding : 0;
     margin-bottom: 20px;
+    &:hover {
+        opacity: 1;
+    }
+    a {
+        &:hover {
+            text-decoration: unset;
+        }
+    }
     .container-tree {
         border-radius: 5px;
         display: flex;
@@ -33,6 +44,43 @@
         .description {
             width: 75%;
             text-align: center;
+        }
+    }
+    .hover {
+        margin-top: 20px;
+        font-size: 14px;
+        position: absolute;
+        top: 0;
+        display : none;
+    }
+    &:hover {
+        .hover {
+            display: block;
+            transition: .4s;
+        }
+    }
+    &.compact {
+        height: 65px;
+        filter: grayscale(100%);
+        &:hover { 
+            transition : filter .4s;
+            filter: grayscale(70%);
+        }
+        &.active {
+            filter: unset;
+        }
+        .description {
+            display: none;
+        }
+        .hover {
+            margin-top: 20px;
+            font-size: 14px;
+            position: absolute;
+            bottom: 0;
+            display : block;
+        }
+        .title {
+            display: none;
         }
     }
 }

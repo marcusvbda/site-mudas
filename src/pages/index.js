@@ -6,8 +6,8 @@ import dynamic from 'next/dynamic'
 const Carousel = dynamic(() => import('@/src/components/home/carousel'))
 import About from '@/src/components/about'
 const TestimonalCard = dynamic(() => import('@/src/components/home/testimonial-card'))
-const MotionCard = dynamic(() => import('@/src/components/home/motion-card'))
 const InstagramFeed = dynamic(() => import('@/src/components/instagram-feed'))
+const TypeList = dynamic(() => import('@/src/components/products/type-list'))
 
 
 const Home = () => {
@@ -27,24 +27,7 @@ const Home = () => {
                         💚 UMA MUDA POR VEZ
                     </h3>
                     <Row className="pb-5 mt-3">
-                        <MotionCard
-                            image="/home/plante.webp"
-                            type="green"
-                            title="Plante uma Arvore 🌴"
-                            description="Um novo futuro pode começar com você !"
-                        />
-                        <MotionCard
-                            image="/home/flor.webp"
-                            type="purple"
-                            title="Permita Florecer 🌹"
-                            description="Tudo que floresce na nossa vida é resultado do que cultivamos !"
-                        />
-                        <MotionCard
-                            image="/home/jabuticabeira.webp"
-                            type="black"
-                            title="Adoce a Vida 🍍"
-                            description="De mais sabor ao mundo e adoce o dia das pessoas colhendo frutas !"
-                        />
+                        <TypeList />
                     </Row>
                 </Container>
             </section>

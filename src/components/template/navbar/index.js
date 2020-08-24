@@ -43,9 +43,9 @@ const NavBarTemplate = ({ isMobile, current }) => {
                                 <FontAwesomeIcon icon={faAddressCard} className="mr-2" />Sobre
                             </a>
                         </Link>
-                        <Link href="/produtos">
+                        <Link href="/mudas/frutiferas">
                             <a className={`nav-link ${current == 'products' ? 'active' : ''} ml-3`}>
-                                <FontAwesomeIcon icon={faLeaf} className="mr-2" />Produtos
+                                <FontAwesomeIcon icon={faLeaf} className="mr-2" />Mudas
                             </a>
                         </Link>
                         <Link href="/servicos">
