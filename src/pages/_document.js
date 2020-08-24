@@ -24,7 +24,7 @@ class _Document extends Document {
                     <meta property="og:description" content={this.getDescription()} />
                     <meta property="og:type" content="website" />
                     <meta name="description" content={this.getDescription()} />
-                    {/* <meta name="google-site-verification" content="EjVfNL7-L50qFZGgRVeOhwjXySQrbkU4_XTsic2lvGMdsd" /> */}
+                    <meta name="google-site-verification" content="9juz3aw9HuVbOjgzDoBP0WFriXNSpwqYDcB-iHmoUPA" />
                 </Head>
                 <body>
                     <h2 className="d-none">{this.getDescription()}</h2>
