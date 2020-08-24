@@ -8,7 +8,7 @@ const SocialIcons = () => {
             <a href="http://wa.me/+5514997210771" className="text-secondary" target="_blank" rel="noreferrer">
                 <FontAwesomeIcon icon={faWhatsapp} style={{ fontSize: 25 }} className="mx-1" />
             </a>
-            <a href="https://www.instagram.com/mudascarvalho" className="text-secondary" target="_blank" rel="noreferrer">
+            <a href="https://www.facebook.com/mudas.carvalho.1" className="text-secondary" target="_blank" rel="noreferrer">
                 <FontAwesomeIcon icon={faFacebook} style={{ fontSize: 25 }} className="mx-1" />
             </a>
             <a href="https://www.instagram.com/mudascarvalho" className="text-secondary" target="_blank" rel="noreferrer">
