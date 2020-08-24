@@ -27,6 +27,7 @@
     "react-bootstrap": "^1.2.2",
     "react-dom": "^16.13.1",
     "react-instagram-embed": "^1.5.0",
+    "react-modal-image": "^2.5.0",
     "react-typeout": "^1.0.0"
   }
 }

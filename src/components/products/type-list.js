@@ -13,7 +13,7 @@ const TypeList = ({ compact, active }) => {
                 title="Plante uma Arvore 🌴"
                 description="Um novo futuro pode começar com você !"
                 hover="Clique para ver nossa mudas de reflorestamento"
-                className={`${compact === true ? 'compact' : ''}  ${active == 'forest' ? 'active shadow' : ''}`}
+                className={`${compact === true ? 'compact' : ''}  ${active == 'forest' ? 'active' : ''}`}
             />
             <MotionCard
                 image="/home/flor.webp"
@@ -22,7 +22,7 @@ const TypeList = ({ compact, active }) => {
                 title="Permita Florecer 🌹"
                 description="Tudo que floresce na nossa vida é resultado do que cultivamos !"
                 hover="Clique para ver nossa mudas de ornamentais"
-                className={`${compact === true ? 'compact' : ''} ${active == 'flowers' ? 'active shadow' : ''}`}
+                className={`${compact === true ? 'compact' : ''} ${active == 'flowers' ? 'active' : ''}`}
             />
             <MotionCard
                 image="/home/jabuticabeira.webp"
@@ -31,7 +31,7 @@ const TypeList = ({ compact, active }) => {
                 title="Adoce a Vida 🍍"
                 description="De mais sabor ao mundo e adoce o dia das pessoas colhendo frutas !"
                 hover="Clique para ver nossa mudas de frutíferas"
-                className={`${compact === true ? 'compact' : ''} ${active == 'fruits' ? 'active shadow' : ''}`}
+                className={`${compact === true ? 'compact' : ''} ${active == 'fruits' ? 'active' : ''}`}
             />
         </>
     )

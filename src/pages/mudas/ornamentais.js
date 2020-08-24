@@ -8,8 +8,9 @@ const TypeList = dynamic(() => import('@/src/components/products/type-list'))
 const Flowers = () => {
     const { app } = useContext(GlobalContext)
     return (
-        <Template title="Produtos" isMobile={app.isMobile} current="products">
+        <Template title="Mudas Ornamentais" isMobile={app.isMobile} current="products">
             <Container>
+                <h3 className="font-weight-light f-50 my-4 text-md-left text-sm-center">🍃 MUDAS ORNAMENTAIS</h3>
                 <Row className="pb-5 mt-3" id="products-page">
                     <TypeList compact={true} active="flowers" />
                 </Row>
