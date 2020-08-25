@@ -61,12 +61,16 @@
     }
     &.compact {
         height: 65px;
+        zoom : .85;
+        opacity: .85;
         filter: grayscale(100%);
         &:hover { 
             transition : filter .4s;
             filter: grayscale(70%);
         }
         &.active {
+            zoom : 1;
+            opacity : 1;
             filter: unset;
             -webkit-box-shadow: 0px 0px 17px 0px rgba(0,135,29,1);
             -moz-box-shadow: 0px 0px 17px 0px rgba(0,135,29,1);
