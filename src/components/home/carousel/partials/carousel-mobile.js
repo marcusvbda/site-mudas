@@ -28,7 +28,7 @@ const CarouselMobile = ({ timeout }) => {
             </Carousel.Item>
             <Carousel.Item>
                 <div className="carousel-image mobile" style={{
-                    backgroundImage: `url(/home/flor.webp)`
+                    backgroundImage: `url(/home/viveiro2.webp)`
                 }}>
                     <Container>
                         <div className="carousel-item-content">
