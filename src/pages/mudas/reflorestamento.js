@@ -27,7 +27,7 @@ const Forest = () => {
                 </Row>
                 <Row className="d-flex align-items-center justify-content-center align-items-stretch">
                     <Col md={4} sm={12} className="mb-2">
-                        <label className="label-muda"></label>
+                        <label className="label-muda">Reseda Gigante</label>
                         <ModalImage
                             small={`/mudas/reflorestamento/1.webp`}
                             large={`/mudas/reflorestamento/1.webp`}
@@ -35,7 +35,7 @@ const Forest = () => {
                         />
                     </Col>
                     <Col md={4} sm={12} className="mb-2">
-                        <label className="label-muda"></label>
+                        <label className="label-muda">Pau Brasil</label>
                         <ModalImage
                             small={`/mudas/reflorestamento/2.webp`}
                             large={`/mudas/reflorestamento/2.webp`}
@@ -43,7 +43,7 @@ const Forest = () => {
                         />
                     </Col>
                     <Col md={4} sm={12} className="mb-2">
-                        <label className="label-muda"></label>
+                        <label className="label-muda">Ipê Roxo</label>
                         <ModalImage
                             small={`/mudas/reflorestamento/3.webp`}
                             large={`/mudas/reflorestamento/3.webp`}
@@ -53,18 +53,10 @@ const Forest = () => {
                 </Row>
                 <Row className="mt-3 d-flex align-items-stretch justify-content-center">
                     <Col md={4} sm={12} className="mb-2">
-                        <label className="label-muda"></label>
+                        <label className="label-muda">Flamboyã</label>
                         <ModalImage
                             small={`/mudas/reflorestamento/4.webp`}
                             large={`/mudas/reflorestamento/4.webp`}
-                            alt="Mudas Carvalho"
-                        />
-                    </Col>
-                    <Col md={4} sm={12} className="mb-2">
-                        <label className="label-muda"></label>
-                        <ModalImage
-                            small={`/mudas/reflorestamento/5.webp`}
-                            large={`/mudas/reflorestamento/5.webp`}
                             alt="Mudas Carvalho"
                         />
                     </Col>

@@ -68,6 +68,14 @@ const Fruits = () => {
                             alt="Uva"
                         />
                     </Col>
+                    <Col md={4} sm={12}>
+                        <label className="label-muda">Acerola</label>
+                        <ModalImage
+                            small={`/mudas/frutiferas/6.webp`}
+                            large={`/mudas/frutiferas/6.webp`}
+                            alt="Uva"
+                        />
+                    </Col>
                 </Row>
             </Container>
         </Template>
