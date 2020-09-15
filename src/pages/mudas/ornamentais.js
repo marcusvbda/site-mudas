@@ -27,37 +27,37 @@ const Flowers = () => {
                 </Row>
                 <Row className="d-flex align-items-center justify-content-center align-items-stretch">
                     <Col md={4} sm={12} className="mb-2">
-                        <label className="label-muda"></label>
+                        <label className="label-muda">Palmeira Imperial</label>
                         <ModalImage
                             small={`/mudas/ornamentais/1.webp`}
                             large={`/mudas/ornamentais/1.webp`}
-                            alt="Mudas Carvalho"
+                            alt="Palmeira Imperial"
                         />
                     </Col>
                     <Col md={4} sm={12} className="mb-2">
-                        <label className="label-muda"></label>
+                        <label className="label-muda">Cipreste Italiano</label>
                         <ModalImage
                             small={`/mudas/ornamentais/2.webp`}
                             large={`/mudas/ornamentais/2.webp`}
-                            alt="Mudas Carvalho"
+                            alt="Cipreste Italiano"
                         />
                     </Col>
                     <Col md={4} sm={12} className="mb-2">
-                        <label className="label-muda"></label>
+                        <label className="label-muda">Rabo de Raposa</label>
                         <ModalImage
                             small={`/mudas/ornamentais/3.webp`}
                             large={`/mudas/ornamentais/3.webp`}
-                            alt="Mudas Carvalho"
+                            alt="Rabo de Raposa"
                         />
                     </Col>
                 </Row>
                 <Row className="mt-3 d-flex align-items-stretch justify-content-center">
                     <Col md={4} sm={12} className="mb-2">
-                        <label className="label-muda"></label>
+                        <label className="label-muda">Palmeira azul - Bismarckia</label>
                         <ModalImage
                             small={`/mudas/ornamentais/4.webp`}
                             large={`/mudas/ornamentais/4.webp`}
-                            alt="Mudas Carvalho"
+                            alt="Palmeira azul - bismarckia"
                         />
                     </Col>
                 </Row>
