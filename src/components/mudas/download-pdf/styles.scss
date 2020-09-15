@@ -1,0 +1,14 @@
+.download-pdf {
+    opacity: .8;
+    &:hover {
+        text-decoration: none;
+        transition: .4s;
+        opacity: 1;
+    }
+    .donwload-text {
+        cursor : pointer;
+        font-size: 25px;
+        color: #b03724;
+        font-weight: 300;
+    }
+}

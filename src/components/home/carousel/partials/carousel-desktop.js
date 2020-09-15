@@ -30,7 +30,7 @@ const CarouselDesktop = ({ timeout }) => {
             </Carousel.Item>
             <Carousel.Item>
                 <div className="carousel-image" style={{
-                    backgroundImage: `url(/home/jabuticabeira.webp)`
+                    backgroundImage: `url(/home/viveiro2.webp)`
                 }}>
                     <Container>
                         <div className="carousel-item-content">
